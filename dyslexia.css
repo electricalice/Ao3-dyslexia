@@ -791,6 +791,12 @@ textarea {
 #greeting p.icon {
   display: none; }
 
+.tag .primary .icon, .tagset .primary .icon {
+  background: url(/images/imageset.png) -10px -285px; }
+
+.skins .primary .icon {
+  background: url(/images/imageset.png) -10px -185px; }
+
 #header .primary {
   background: #4675C0; }
 
@@ -807,6 +813,10 @@ textarea {
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 10px; }
+
+.comment .icon .visitor {
+  background: url(/images/imageset.png) no-repeat -10px -85px;
+  display: block; }
 
 .filters dt, .filters dd, .filters input[type="submit"], .filters .expander {
   font-size: 100%; }
@@ -846,7 +856,7 @@ span.offered, .replied, .nominations .approved {
 span.requested, .nominations .rejected {
   color: #A62637; }
 
-u {
+u, acronym[title] {
   text-decoration: none;
   border-bottom: 2px solid #4675C0;
   font-weight: 700; }

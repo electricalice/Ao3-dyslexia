@@ -130,14 +130,17 @@ div#comments_placeholder, .blurb .userstuff, .news .userstuff, .system .userstuf
 div.preface, .preface.group blockquote.userstuff {
   margin: 0; }
 
-.user .primary p.icon {
+.user .primary p.icon, .admin .primary .icon {
   position: initial;
   top: auto;
   margin: 10px auto; }
 
-.user .primary img.icon {
+.user .primary img.icon, .admin .primary .icon {
   top: auto; }
 
-.user h2.heading {
+.user h2.heading, .admin h2.heading {
   margin: 10px auto;
   text-align: center; }
+
+.comment .userstuff p {
+  padding: 0 5px; }
