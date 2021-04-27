@@ -10,6 +10,9 @@ body,
 h4 {
   font-size: 1.2em; }
 
+#header .primary {
+  padding-bottom: 10px; }
+
 #footer .module {
   max-width: 40%;
   margin: auto; }
@@ -26,7 +29,7 @@ h4 {
   margin-right: auto;
   display: block;
   float: none;
-  font-size: 1em;
+  font-size: 0.8em;
   padding: 0;
   text-align: center; }
 
@@ -83,7 +86,7 @@ h4.heading {
   margin: .375em .375em 0 65px !important;
   overflow-wrap: break-word; }
 
-h5.fandoms.heading {
+h5.fandoms.heading, .news h4.heading, #footer h4.heading, .comment h4.heading {
   margin: 0px !important; }
 
 .blurb .datetime {
@@ -91,6 +94,9 @@ h5.fandoms.heading {
 
 .filters dt {
   background-color: transparent; }
+
+#dashboard ul {
+  display: inline-block; }
 
 #ui-datepicker-div {
   top: 522px !important; }
@@ -115,8 +121,23 @@ div#comments_placeholder, .blurb .userstuff, .news .userstuff, .system .userstuf
   display: inline-block;
   float: initial; }
 
-#header .user {
+#header .user, .comment .posted {
   float: initial; }
+
+.comment .posted {
+  display: block; }
 
 div.preface, .preface.group blockquote.userstuff {
   margin: 0; }
+
+.user .primary p.icon {
+  position: initial;
+  top: auto;
+  margin: 10px auto; }
+
+.user .primary img.icon {
+  top: auto; }
+
+.user h2.heading {
+  margin: 10px auto;
+  text-align: center; }

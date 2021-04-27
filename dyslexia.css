@@ -434,7 +434,7 @@ body,
   width: 70%;
   margin: auto !important;
   max-width: 45em;
-  text-align: left;
+  text-align: left !important;
   word-spacing: 0.21em;
   line-height: 1.8em; }
 
