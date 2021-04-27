@@ -1,0 +1,122 @@
+body,
+#header,
+#outer.wrapper,
+#inner.wrapper,
+.secondary,
+#modal,
+.filters .expander {
+  font-size: 1.3em; }
+
+h4 {
+  font-size: 1.2em; }
+
+#footer .module {
+  max-width: 40%;
+  margin: auto; }
+
+.userstuff {
+  font-size: 110%; }
+
+#footer .heading,
+.comment h4.byline, .home .header .userstuff, .home .header dl.stats, .home .header .type, .blurb dl.tags dd, dl.meta dd {
+  overflow-wrap: break-word; }
+
+#header .heading {
+  margin-left: auto !important;
+  margin-right: auto;
+  display: block;
+  float: none;
+  font-size: 1em;
+  padding: 0;
+  text-align: center; }
+
+#login, #greeting {
+  margin-right: auto;
+  margin-left: auto;
+  float: none;
+  margin-top: 0px !important; }
+
+#header .menu,
+#small_login,
+#header .dropdown:hover .current + .menu,
+#header .menu,
+#small_login,
+#header .dropdown:hover .current + .menu {
+  width: 100% !important;
+  left: 0 !important;
+  right: 0 !important;
+  position: fixed; }
+
+p.kudos {
+  background: url(/images/imageset.png) no-repeat -110px -580px;
+  padding: 4em 0 0 0;
+  min-height: 50px;
+  word-break: break-word; }
+
+#header .primary .menu a {
+  padding: .429em .75em; }
+
+.home .header .userstuff,
+.home .header dl.stats,
+.home .header .type, .blurb dl.tags dd, dl.meta dd {
+  margin-left: auto; }
+
+#header .menu,
+#small_login,
+#header .dropdown:hover .current + .menu,
+#header .menu,
+#small_login,
+#header .dropdown:hover .current + .menu {
+  width: auto; }
+
+h2 {
+  font-size: 1.8em;
+  font-weight: 600; }
+
+#dashboard,
+#dashboard.own {
+  border-bottom: 0px;
+  border-top: 0px;
+  border: 0px; }
+
+h4.heading {
+  margin: .375em .375em 0 65px !important;
+  overflow-wrap: break-word; }
+
+h5.fandoms.heading {
+  margin: 0px !important; }
+
+.blurb .datetime {
+  position: relative; }
+
+.filters dt {
+  background-color: transparent; }
+
+#ui-datepicker-div {
+  top: 522px !important; }
+
+.javascript {
+  background-color: transparent; }
+
+.assigned.module th[scope="col"],
+thead th[scope="col"] {
+  max-width: 18px;
+  overflow: hidden; }
+
+div#comments_placeholder, .blurb .userstuff, .news .userstuff, .system .userstuff {
+  width: 100% !important;
+  margin: auto;
+  text-align: left; }
+
+#workskin {
+  width: 100% !important; }
+
+#header li {
+  display: inline-block;
+  float: initial; }
+
+#header .user {
+  float: initial; }
+
+div.preface, .preface.group blockquote.userstuff {
+  margin: 0; }

@@ -1,0 +1,867 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+  /*
+  This is the font for the titles, not for the body of text. 
+  If you want to change it remember to provide fallback fonts 
+  (something like 'serif' or 'sans-serif', separated by a comma)
+  */
+  font-family: "Trebuchet MS", Calibri, sans-serif;
+  border-bottom: none;
+  font-weight: 700; }
+
+.home .header h2,
+.preface h3,
+.faq .categories h3,
+.userstuff h3 {
+  border-bottom: none; }
+
+body,
+input,
+.toggled form,
+.dynamic form,
+.secondary,
+.dropdown, button, blockquote, .filters dt, .filters dd, .filters input[type="submit"], .filters .expander, .bookmark .user .meta, .datetime, a.work {
+  /*
+This is the font for the entire body of text. If you need to change it please do it here
+Please also remember to provide fallback fonts 
+(something like 'serif' or 'sans-serif', separated by a comma)
+*/
+  font-family: "Trebuchet MS", Calibri, sans-serif; }
+
+body,
+input,
+.toggled form,
+.dynamic form,
+.secondary,
+.dropdown, button {
+  font-size: 110%;
+  line-height: 1.125; }
+
+blockquote {
+  font-size: 100%;
+  line-height: 1.125; }
+
+.filters dt, .filters dd, .filters input[type="submit"], .filters .expander {
+  font-size: 95%;
+  line-height: 1.125; }
+
+h4 {
+  font-size: 1.7em; }
+
+h4.heading .datetime {
+  font-size: .5em; }
+
+.preface a:hover {
+  text-decoration: none; }
+
+.actions a,
+.actions a:link,
+.action,
+.action:link,
+button,
+.current,
+.actions label {
+  border: none;
+  background-image: none;
+  box-shadow: none;
+  -webkit-appearance: none; }
+
+.actions input,
+input[type="submit"],
+textarea {
+  border: 1px solid;
+  background-image: none;
+  box-shadow: none;
+  -webkit-appearance: none; }
+
+input {
+  width: 96%;
+  border: 1px solid;
+  background-image: none;
+  box-shadow: none; }
+
+form.search input[type="text"], dd.autocomplete li.input, input[type="radio"], select, input[type="checkbox"], input[type="file"], input.number, p input, p select, .heading select, li select, input:focus, select:focus, textarea:focus, input, textarea {
+  border: 0px;
+  color: currentColor; }
+
+.actions a:hover,
+a:hover,
+.actions input:hover,
+#dashboard a:hover,
+.actions a:focus,
+.actions input:focus,
+#dashboard a:focus,
+.actions a:active,
+.current,
+a.current,
+.current a:visited,
+.actions a:hover,
+.actions input:hover,
+#dashboard a:hover,
+.actions a:focus,
+.actions input:focus,
+#dashboard a:focus,
+.actions a:active,
+.current,
+a.current,
+.current a:visited,
+#dashboard .current,
+.actions a:active,
+#outer .current,
+#header .current,
+a.current,
+.current a:visited,
+span.unread,
+.replied,
+span.claimed,
+dl.index dd,
+.own,
+.draft,
+.draft .unread,
+.child,
+.unwrangled,
+.unreviewed,
+.ui-sortable li:hover,
+#header .primary .menu .current {
+  border-color: initial;
+  box-shadow: none !important; }
+
+#header .primary,
+.group.listbox,
+fieldset fieldset.listbox,
+#main li.blurb,
+.wrapper,
+#dashboard .secondary,
+.secondary,
+form blockquote.userstuff,
+.thread .comment,
+.toggled form,
+#header .primary,
+.listbox .index,
+form .notice,
+form ul.notes,
+form.verbose legend,
+.verbose form legend,
+span.question,
+fieldset,
+form dl,
+fieldset dl dl,
+fieldset fieldset fieldset,
+fieldset fieldset dl dl,
+dd.hideme,
+form blockquote.userstuff,
+.delete a,
+span.delete,
+#header ul.primary {
+  box-shadow: none; }
+
+.notice,
+.comment_notice,
+ul.notes,
+.caution,
+.error,
+.comment_error,
+.alert.flash,
+.actions a:hover,
+.actions input:hover,
+.actions a:focus,
+.actions input:focus,
+label.action:hover,
+.action:hover,
+.action:focus,
+.notice,
+.comment_notice,
+ul.notes,
+.caution,
+.error,
+.comment_error,
+.alert.flash,
+.actions a:hover,
+.actions input:hover,
+.actions a:focus,
+.actions input:focus,
+label.action:hover,
+.action:hover,
+.action:focus, .toggled form, .dynamic form, .ui-draggable form {
+  border: none;
+  box-shadow: none; }
+
+form .notice,
+form ul.notes,
+form.verbose legend,
+.verbose form legend,
+.actions a,
+.actions a:link,
+.action,
+.action:link,
+input[type="submit"],
+button,
+.current,
+.actions label {
+  border: none;
+  border-bottom: none;
+  background-image: none;
+  box-shadow: none; }
+
+.listbox .index,
+.dashboard .listbox .index, .splash .news li, form dt, .picture .header {
+  border: none;
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+  border-right: none; }
+
+#header .menu,
+#small_login,
+#header .dropdown:hover .current + .menu, .event .userstuff {
+  box-shadow: none;
+  background-image: none;
+  filter: none; }
+
+#footer, .autocomplete .dropdown ul li:hover, li.selected, autocomplete a:hover {
+  background-image: none; }
+
+.autocomplete input, .autocomplete .dropdown ul li {
+  min-width: 10px; }
+
+.filters .expander, .filters .expanded .expander {
+  padding: 0px;
+  font-size: 1.05em;
+  background: none; }
+
+.filters .expander::before {
+  content: "\2799"; }
+
+.filters .expanded .expander::before {
+  content: "\2798"; }
+
+.filters input:checked + .indicator + span {
+  font-weight: inherit; }
+
+.filters [type="radio"] + .indicator:before {
+  content: "";
+  width: .8em;
+  height: .8em;
+  vertical-align: -.125em;
+  border-radius: .8em;
+  background: none;
+  background-color: #e4e4eb;
+  border: none; }
+
+.filters [type="radio"]:checked + .indicator:before {
+  content: "";
+  width: .8em;
+  height: .8em;
+  vertical-align: -.125em;
+  border-radius: .8em;
+  background: none;
+  background-color: #4675C0;
+  border: none; }
+
+.filters [type="checkbox"] + .indicator:before, .filters .exclude [type="checkbox"] + .indicator:before {
+  content: "";
+  width: .8em;
+  height: .8em;
+  padding: 0px;
+  border-radius: 0px;
+  vertical-align: -.125em;
+  background: none;
+  background-color: #e4e4eb;
+  border: none; }
+
+.filters [type="checkbox"]:checked + .indicator:before, .filters .exclude [type="checkbox"]:checked + .indicator:before {
+  content: "";
+  width: .8em;
+  height: .8em;
+  padding: 0px;
+  border-radius: 0px;
+  vertical-align: -.125em;
+  background: none;
+  background-color: #4675C0;
+  border: none; }
+
+.filters .exclude [type="checkbox"]:checked + .indicator:before {
+  background-color: #A62637; }
+
+input[type="checkbox"], input[type="radio"] {
+  background-color: #e4e4eb;
+  border: 1px solid #4675C0;
+  display: inline-block;
+  width: .8em;
+  height: .8em;
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+input[type="radio"] {
+  border-radius: 50%; }
+
+.actions input[type="checkbox"], label.action input[type="checkbox"] {
+  background-color: #e4e4eb; }
+
+input[type="checkbox"]:checked, input[type="radio"]:checked, .actions input[type="checkbox"]:checked, label.action input[type="checkbox"]:checked, input[type="checkbox"]:hover, .actions input[type="checkbox"]:hover {
+  background-color: #4675C0;
+  border: none;
+  display: inline-block;
+  width: .8em;
+  height: .8em;
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.event .userstuff a, .event .userstuff a:link, .event .userstuff a:visited {
+  border-bottom: 1px solid; }
+
+fieldset,
+form dl,
+fieldset dl dl,
+fieldset fieldset fieldset,
+fieldset fieldset dl dl,
+dd.hideme,
+form blockquote.userstuff,
+.listbox,
+fieldset fieldset.listbox,
+.own,
+.draft,
+.draft .wrapper,
+.unread,
+.child,
+.unwrangled,
+.unreviewed,
+form.verbose legend,
+.verbose form legend, li.blurb, fieldset, form dl, li.comment {
+  background: transparent;
+  border: 2px solid;
+  border-radius: 5px; }
+
+.secondary,
+th,
+thead,
+tbody tr, dl.meta, li.post.group, .faq .example, .guideline .example {
+  border: 2px solid;
+  border-radius: 5px; }
+
+li.post.group {
+  padding: 10px; }
+
+.splash .news li:last-of-type {
+  border-bottom: 2px solid;
+  border-radius: 5px; }
+
+.comment h4.byline,
+dl.index dd,
+.listbox .index,
+fieldset fieldset,
+fieldset dl dl,
+form blockquote.userstuff,
+table,
+tr,
+th,
+td,
+thead,
+tfoot, .reading h4.viewed {
+  background: transparent; }
+
+tr, th, td, thead, tfoot {
+  vertical-align: middle; }
+
+.bookmark .user,
+.filters dl,
+.filters dt,
+dl.index dd,
+div.comment,
+#modal,
+#dashboard.own,
+#dashboard ul, .autocomplete div.dropdown ul, .event .userstuff {
+  border: none; }
+
+#dashboard.own,
+#dashboard ul,
+.splash .module h3,
+.comment div.icon,
+a,
+a:link,
+a:visited:hover {
+  border-top: none;
+  border-bottom: none;
+  border: none; }
+
+span.symbol {
+  color: initial;
+  font-family: "Trebuchet MS", Calibri, sans-serif;
+  border: 1px solid;
+  vertical-align: middle; }
+
+.blurb .header img {
+  vertical-align: baseline;
+  padding: 3px;
+  border-radius: 3px; }
+
+body,
+#header,
+#outer.wrapper,
+#inner.wrapper,
+.secondary,
+#modal,
+.filters .expander {
+  color: #373a3c;
+  background-color: #f7f7f9;
+  font-size: 1.1em;
+  letter-spacing: 0.02em;
+  word-spacing: 0.21em;
+  line-height: 1.8em; }
+
+#header {
+  line-height: initial; }
+
+#workskin, .blurb .userstuff, .news .userstuff, .system .userstuff {
+  font-size: 1.1em;
+  width: 70%;
+  margin: auto !important;
+  max-width: 45em;
+  text-align: left;
+  word-spacing: 0.21em;
+  line-height: 1.8em; }
+
+.comment .userstuff {
+  width: 95%; }
+
+.blurb .userstuff {
+  padding: 20px 0; }
+
+.news .wrapper {
+  text-align: center; }
+
+.userstuff img {
+  margin: auto;
+  display: block;
+  max-width: 90%; }
+
+.icon {
+  height: 80px;
+  width: 80px; }
+
+div#comments_placeholder {
+  width: 70%;
+  margin: auto;
+  text-align: left;
+  max-width: 45em; }
+
+#chapters,
+#chapters p, textarea, #footer li, .preface.group blockquote.userstuff, .preface.group blockquote.userstuff p, .userstuff p, #footer li, .comment .userstuff {
+  text-align: left;
+  word-spacing: 0.21em;
+  line-height: 1.8em; }
+
+.blurb dl.stats, .actions li a, .actions li input, .actions li input[type="submit"], input[type="submit"], .actions li .current, .actions li label, #header .primary .menu a, #header .primary .menu .current, form.search input[type="text"], dd.autocomplete li.input, input[type="radio"], select, input[type="checkbox"], input[type="file"], input.number, p input, p select, .heading select, li select, input:focus, select:focus, textarea:focus, input, textarea {
+  word-spacing: 0.21em;
+  letter-spacing: 0.02em;
+  font-size: 1.1em; }
+
+.userstuff p {
+  margin: 2em auto; }
+
+textarea, #footer li, .comment .userstuff, form.search input[type="text"], dd.autocomplete li.input, input[type="radio"], select, input[type="checkbox"], input[type="file"], input.number, p input, p select, .heading select, li select, input:focus, select:focus, textarea:focus, input {
+  font-size: 1.1em; }
+
+a.tag, a.tag:visited, a.tag:link {
+  color: #373a3c;
+  padding: 4px;
+  line-height: 2.3em;
+  border: 2px solid #4675C0;
+  border-radius: 5px; }
+
+html, body, div, span, applet, object, iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody, tfoot, thead, tr, th, td {
+  font-size: 100%; }
+
+h1 {
+  font-size: 2.60545em;
+  font-weight: 600; }
+
+#header h1 {
+  font-size: 1.1em;
+  font-weight: 700; }
+
+h2 {
+  font-size: 2.60545em;
+  font-weight: 600; }
+
+h3 {
+  font-size: 1.95458em;
+  line-height: 1.8em; }
+
+h4 {
+  font-size: 1.4663em; }
+
+h4.heading {
+  font-size: 1.8em;
+  font-weight: 700; }
+
+h5,
+h6, h4.viewed {
+  font-size: 1.1em; }
+
+#main.system h2.heading, #main.system h3.heading {
+  text-align: center;
+  margin: auto;
+  display: block; }
+
+::-moz-selection,
+::selection,
+::-webkit-selection {
+  background-color: #4675C0;
+  color: #f7f7f9; }
+
+.actions a,
+.actions a:link,
+.actions a:visited,
+.action,
+.action:link,
+.actions input,
+input[type="submit"],
+button,
+.current,
+.actions label,
+.listbox > .heading,
+.listbox .heading a:visited,
+form dd.required,
+.filters dt,
+.filters dd,
+.filters input[type="submit"],
+.filters .expander,
+#header .primary .menu a,
+#header .primary .menu .current {
+  color: #373a3c; }
+
+a,
+a:link,
+a:visited,
+a.tag,
+a.tag:visited,
+a.tag:link,
+.listbox .index a:link,
+.listbox .index a:visited,
+.listbox .index a,
+#header .heading a,
+.splash .module h3,
+.blurb h4 a:link,
+.blurb h4 a,
+.blurb h4 a:visited,
+#dashboard a,
+#dashboard span, #header .user a:hover, #header .user a:focus, #header .user .current, li::marker, .draggable, .droppable {
+  color: #4675C0; }
+
+.blurb ul li, .blurb dd ul li, .meta dd ul li {
+  display: inline-block;
+  margin: 0; }
+
+.actions a,
+.actions a:link,
+.actions a:visited,
+.action,
+.action:link,
+.actions input,
+input[type="submit"],
+button,
+.current,
+.actions label,
+.dropdown,
+.splash .favorite li:nth-of-type(odd) a,
+input#site_search:focus,
+#header #search input:focus,
+.autocomplete div.dropdown ul,
+.toggled form,
+.dynamic form,
+.secondary,
+.dropdown {
+  color: #373a3c;
+  background-color: #ededf2; }
+
+#footer,
+a:hover,
+a.tag:hover,
+.listbox .heading a.tag:visited:hover,
+#dashboard a:hover,
+.actions a:hover,
+.actions input:hover,
+.actions a:focus,
+.actions input:focus,
+label.action:hover,
+.action:hover,
+.action:focus,
+.splash .favorite li:nth-of-type(odd) a:hover,
+.splash .favorite li:nth-of-type(odd) a:focus,
+.blurb h4 a:hover,
+a:visited:hover,
+input[type="submit"]:hover,
+#header .dropdown .menu a:hover,
+#header .dropdown .menu a:focus,
+.event .userstuff,
+.event .userstuff a,
+.event .userstuff a:link,
+.event .userstuff a:visited,
+.listbox .index a:hover,
+.autocomplete .dropdown ul li:hover,
+li.selected {
+  background-color: #4675C0;
+  color: #f7f7f9; }
+
+#dashboard .current,
+#header .menu,
+#small_login,
+#header .dropdown:hover .current + .menu,
+#header .actions a:hover,
+#header .actions a:focus,
+#header .dropdown:hover a,
+#header .open a,
+#header #search input:focus,
+#header #search input,
+tr:hover,
+#outer .current,
+.thread .even {
+  background-color: #ededf2; }
+
+a.modal.help:hover {
+  background-color: transparent; }
+
+#header h2.collections, #header h2 {
+  border-top: none;
+  text-align: center; }
+
+.notice,
+.comment_notice,
+ul.notes,
+.caution,
+.error,
+.comment_error,
+.alert.flash,
+.required .autocomplete,
+.autocomplete .notice,
+#header h2.collections,
+#header h2 {
+  background-color: #8FC8EB;
+  color: #373a3c; }
+
+.notice a, .notice a:link, .notice a:visited {
+  color: #f7f7f9; }
+
+fieldset,
+form dl,
+fieldset dl dl,
+fieldset fieldset fieldset,
+fieldset fieldset dl dl,
+dd.hideme,
+form blockquote.userstuff,
+.listbox,
+fieldset fieldset.listbox,
+.own,
+.draft,
+.draft .wrapper,
+.unread,
+.child,
+.unwrangled,
+.unreviewed,
+form.verbose legend,
+.verbose form legend,
+.secondary,
+th,
+thead,
+tbody tr,
+.wrapper,
+li.blurb,
+fieldset,
+form dl,
+dl.meta, li.post.group, .splash .news li:last-of-type, li.comment, .faq .example, .guideline .example {
+  border-color: #4675C0; }
+
+.required,
+.error,
+.alert.flash, .nominations .rejected {
+  color: #A62637; }
+
+.secondary {
+  background-color: #f7f7f9; }
+
+form.search input[type="text"],
+dd.autocomplete li.input,
+input[type="radio"],
+select,
+input[type="checkbox"],
+input[type="file"],
+input.number,
+p input,
+p select,
+.heading select,
+li select,
+input:focus,
+select:focus,
+textarea:focus,
+input,
+textarea {
+  border-top-color: #e4e4eb;
+  border-color: #e4e4eb;
+  background-color: #e4e4eb; }
+
+.filters [type="radio"] + .indicator:before,
+.filters [type="checkbox"] + .indicator:before,
+.filters .exclude [type="checkbox"] + .indicator:before {
+  background-color: #e4e4eb; }
+
+.filters [type="radio"]:checked + .indicator:before,
+.filters [type="checkbox"]:checked + .indicator:before,
+.filters .exclude [type="checkbox"]:checked + .indicator:before {
+  background-color: #4675C0; }
+
+.filters .exclude [type="checkbox"]:checked + .indicator:before {
+  background-color: #A62637; }
+
+.javascript {
+  background-color: #ededf2 !important; }
+
+.announcement input[type="submit"],
+.announcement .action {
+  background: #f7f7f9;
+  border: 1px solid #4675C0;
+  color: #373a3c; }
+
+.ui-draggable form {
+  box-shadow: 0 0 3px #e4e4eb; }
+
+#header .menu,
+#small_login,
+#header .dropdown:hover .current + .menu {
+  width: 25em; }
+
+#header .logo,
+#header .heading sup,
+#greeting p.icon {
+  display: none; }
+
+#header .primary {
+  background: #4675C0; }
+
+.tox .tox-edit-area__iframe {
+  background-color: red; }
+
+.comment h4.byline {
+  padding: .25em; }
+
+.abbreviated h4.byline {
+  padding-left: .25em; }
+
+.comment div.icon {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px; }
+
+.filters dt, .filters dd, .filters input[type="submit"], .filters .expander {
+  font-size: 100%; }
+
+.filters .expander, .filters .expanded .expander {
+  background-color: #4675C0;
+  color: #f7f7f9;
+  border: 2px solid #4675C0;
+  border-radius: 5px;
+  margin-top: 10px; }
+
+#header .heading {
+  margin-left: 2em; }
+
+#login, #greeting {
+  margin-top: 10px; }
+
+.commas li:after {
+  content: ""; }
+
+.favorite a.tag {
+  border: none; }
+
+.userstuff blockquote {
+  border-inline-start: 2px solid #4675C0; }
+
+.blurb dl.stats {
+  float: initial;
+  text-align: left; }
+
+span.offered.requested {
+  color: #F2AA4C; }
+
+span.offered, .replied, .nominations .approved {
+  color: #75BD57; }
+
+span.requested, .nominations .rejected {
+  color: #A62637; }
+
+u {
+  text-decoration: none;
+  border-bottom: 2px solid #4675C0;
+  font-weight: 700; }
+
+b, strong {
+  font-weight: 700; }
+
+/*
+The following code remove all the italics and changes 
+them into bold instead for easier dyslexia reading. 
+This will override what the fic author's decided to use.
+If you prefer you can delete it and all will return to normal 
+*/
+i, em, cite {
+  font-style: normal;
+  font-weight: 700; }
+
+/* Stop deleting here for the italics thingy*/
