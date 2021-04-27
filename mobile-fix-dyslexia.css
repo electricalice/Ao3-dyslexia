@@ -7,6 +7,9 @@ body,
 .filters .expander {
   font-size: 1.3em; }
 
+#header .user .open a:focus {
+  color: #4675C0; }
+
 h4 {
   font-size: 1.2em; }
 
@@ -72,7 +75,7 @@ p.kudos {
 #header .dropdown:hover .current + .menu {
   width: auto; }
 
-h2 {
+h2, h2.heading {
   font-size: 1.8em;
   font-weight: 600; }
 
