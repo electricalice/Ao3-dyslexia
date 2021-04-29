@@ -1,3 +1,8 @@
+/*
+======================
+  General settings
+======================
+*/
 body,
 #header,
 #outer.wrapper,
@@ -5,29 +10,100 @@ body,
 .secondary,
 #modal,
 .filters .expander {
+  /*
+  This is the size of the body of the font on mobile.
+  please increase or decrease by decimals
+  like 1.2em 1.1em or 1.5em
+  */
   font-size: 1.3em; }
 
-#header .user .open a:focus {
-  color: #4675C0; }
-
-h4 {
-  font-size: 1.2em; }
-
-#header .primary {
-  padding-bottom: 10px; }
-
-#footer .module {
-  max-width: 40%;
-  margin: auto; }
-
 .userstuff {
+  /*
+    don't change this if you are looking to change the font.
+    That option is a few lines before this one. (It's commented)
+    */
   font-size: 110%; }
 
 #footer .heading,
-.comment h4.byline, .home .header .userstuff, .home .header dl.stats, .home .header .type, .blurb dl.tags dd, dl.meta dd {
+.comment h4.byline,
+.home .header .userstuff,
+.home .header dl.stats,
+.home .header .type,
+.blurb dl.tags dd,
+dl.meta dd, h4.heading {
+  /*
+  This allows words to break.
+  Used in cases of long user names and long words 
+  that otherwise would break the entire layout
+  */
   overflow-wrap: break-word; }
 
+/*
+===========
+  Titles
+===========
+*/
+h4 {
+  font-size: 1.2em; }
+
+h2,
+h2.heading {
+  font-size: 1.8em;
+  font-weight: 600; }
+
+.blurb h4.heading {
+  /*
+  accomodates the required tags
+  */
+  margin: .375em .375em 0 65px !important; }
+
+h5.fandoms.heading,
+.news h4.heading,
+#footer h4.heading,
+.comment h4.heading {
+  /*
+  changes back the other titles
+  */
+  margin: 0px !important; }
+
+.user h2.heading,
+.admin h2.heading {
+  /*
+  Centers Usernames and titles in admin pages
+  */
+  margin: 10px auto;
+  text-align: center; }
+
+/*
+===========
+  Header
+===========
+*/
+#header .user .open a:focus {
+  /*
+    This changes the color of the texts in the menu when it's selected
+    For some reason it's changed by Ao3 in the mobile version and not on the desktop skin
+
+    Change this to the color you are using for your links
+    */
+  color: #4675C0; }
+
+#header .primary {
+  /*
+  better spacing in the header
+  */
+  padding-bottom: 10px; }
+
+#header li {
+  /*
+  Makes the header items nicely ordered
+  */
+  display: inline-block; }
+
 #header .heading {
+  /*
+  Centers the primary menu
+  */
   margin-left: auto !important;
   margin-right: auto;
   display: block;
@@ -36,7 +112,11 @@ h4 {
   padding: 0;
   text-align: center; }
 
-#login, #greeting {
+#login,
+#greeting {
+  /*
+  Centers the user menu
+  */
   margin-right: auto;
   margin-left: auto;
   float: none;
@@ -48,24 +128,13 @@ h4 {
 #header .menu,
 #small_login,
 #header .dropdown:hover .current + .menu {
+  /*
+  makes the menu large to fit the screen
+  */
   width: 100% !important;
   left: 0 !important;
   right: 0 !important;
   position: fixed; }
-
-p.kudos {
-  background: url(/images/imageset.png) no-repeat -110px -580px;
-  padding: 4em 0 0 0;
-  min-height: 50px;
-  word-break: break-word; }
-
-#header .primary .menu a {
-  padding: .429em .75em; }
-
-.home .header .userstuff,
-.home .header dl.stats,
-.home .header .type, .blurb dl.tags dd, dl.meta dd {
-  margin-left: auto; }
 
 #header .menu,
 #small_login,
@@ -73,77 +142,168 @@ p.kudos {
 #header .menu,
 #small_login,
 #header .dropdown:hover .current + .menu {
+  /*
+  despite what it looks like, this removes the distance from the dropdown menu
+  */
   width: auto; }
 
-h2, h2.heading {
-  font-size: 1.8em;
-  font-weight: 600; }
+#header .primary .menu a {
+  /* 
+  The dropdown menu items will have enough space around them
+  */
+  padding: .429em .75em; }
 
+/*
+===========
+ Dashboard
+===========
+*/
 #dashboard,
 #dashboard.own {
+  /*
+  Remove the dashboard border
+  */
   border-bottom: 0px;
   border-top: 0px;
   border: 0px; }
 
-h4.heading {
-  margin: .375em .375em 0 65px !important;
-  overflow-wrap: break-word; }
-
-h5.fandoms.heading, .news h4.heading, #footer h4.heading, .comment h4.heading {
-  margin: 0px !important; }
-
-.blurb .datetime {
-  position: relative; }
-
-.filters dt {
-  background-color: transparent; }
-
 #dashboard ul {
+  /* 
+  puts everything in the menu in a nice order
+  */
   display: inline-block; }
 
-#ui-datepicker-div {
-  top: 522px !important; }
+/*
+===========
+ Work Page
+===========
+*/
+#workskin {
+  /*
+  This resets the main page width to a decent size for mobile
+  */
+  width: 100% !important; }
 
-.javascript {
-  background-color: transparent; }
+p.kudos {
+  /*
+  Resets the padding for kudos username list and moves the kudos image
+  */
+  background: url(/images/imageset.png) no-repeat -110px -580px;
+  padding: 4em 0 0 0;
+  min-height: 50px;
+  word-break: break-word; }
 
-.assigned.module th[scope="col"],
-thead th[scope="col"] {
-  max-width: 18px;
-  overflow: hidden; }
+div.preface,
+.preface.group blockquote.userstuff {
+  /*
+  reduces the indent in the blockquotes and the author's note
+  probably I should add it to lists too.
+  */
+  margin: 0; }
 
-div#comments_placeholder, .blurb .userstuff, .news .userstuff, .system .userstuff {
+.home .header .userstuff,
+.home .header dl.stats,
+.home .header .type,
+.blurb dl.tags dd,
+dl.meta dd {
+  /*
+  tags have less space on the left
+  */
+  margin-left: auto; }
+
+/*
+===========
+  Blurb
+===========
+*/
+.blurb .datetime {
+  /*
+  Moves the date of the fic from the top left
+  */
+  position: relative; }
+
+/*
+===========
+  Icons
+===========
+*/
+.user .primary p.icon,
+.admin .primary .icon {
+  /* 
+  centers the icons on profile pages and news posts
+  */
+  position: initial;
+  margin: 10px auto; }
+
+/*
+===========
+  Comments
+===========
+*/
+div#comments_placeholder,
+.blurb .userstuff,
+.news .userstuff,
+.system .userstuff {
+  /*
+  Makes the comments 100% wide again after reducing the width in the desktop skin
+  */
   width: 100% !important;
   margin: auto;
   text-align: left; }
 
-#workskin {
-  width: 100% !important; }
-
-#header li {
-  display: inline-block;
-  float: initial; }
-
-#header .user, .comment .posted {
-  float: initial; }
-
 .comment .posted {
+  /*
+  Makes the span date go in its own line. Dunno why it's a span inside a h4 tbh.
+  */
   display: block; }
 
-div.preface, .preface.group blockquote.userstuff {
-  margin: 0; }
+.comment .userstuff p {
+  /*
+  Comments do a weird thing on the right
+  */
+  padding: 0 5px; }
 
-.user .primary p.icon, .admin .primary .icon {
-  position: initial;
-  top: auto;
-  margin: 10px auto; }
+/*
+===========
+  Footer
+===========
+*/
+#footer .module {
+  /* 
+  makes footer module smaller and centers them
+  */
+  max-width: 40%;
+  margin: auto; }
 
-.user .primary img.icon, .admin .primary .icon {
+/* 
+===========
+  FIXES
+===========
+
+
+Resets stuff from Ao3 default skin
+*/
+.user .primary img.icon,
+.admin .primary .icon,
+.user .primary p.icon {
   top: auto; }
 
-.user h2.heading, .admin h2.heading {
-  margin: 10px auto;
-  text-align: center; }
+#header .user,
+.comment .posted,
+#header li {
+  float: initial; }
 
-.comment .userstuff p {
-  padding: 0 5px; }
+.javascript,
+.filters dt {
+  background-color: transparent; }
+
+/*
+Fixing actual errors from default Ao3
+*/
+#ui-datepicker-div {
+  top: 522px !important; }
+
+.assigned.module th[scope="col"],
+.assigned.module thead th[scope="col"] {
+  max-width: 18px;
+  overflow: hidden; }
