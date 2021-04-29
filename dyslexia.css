@@ -352,7 +352,7 @@ form.verbose legend,
 .secondary,
 th,
 thead,
-tbody tr, dl.meta, li.post.group, .faq .example, .guideline .example {
+tbody tr, dl.meta, li.post.group, .faq .example, .guideline .example, tr:hover {
   border: 2px solid;
   border-radius: 5px; }
 
@@ -429,7 +429,7 @@ body,
 #header {
   line-height: initial; }
 
-#workskin, .blurb .userstuff, .news .userstuff, .system .userstuff {
+#workskin, .blurb .userstuff, .news .userstuff, .system .userstuff, .collection blockquote.userstuff {
   font-size: 1.1em;
   width: 70%;
   margin: auto !important;
@@ -468,7 +468,7 @@ div#comments_placeholder {
   word-spacing: 0.21em;
   line-height: 1.8em; }
 
-.blurb dl.stats, .actions li a, .actions li input, .actions li input[type="submit"], input[type="submit"], .actions li .current, .actions li label, #header .primary .menu a, #header .primary .menu .current, form.search input[type="text"], dd.autocomplete li.input, input[type="radio"], select, input[type="checkbox"], input[type="file"], input.number, p input, p select, .heading select, li select, input:focus, select:focus, textarea:focus, input, textarea {
+.blurb dl.stats, .actions li a, .actions li input, .actions li input[type="submit"], input[type="submit"], .actions li .current, .actions li label, #header .primary .menu a, #header .primary .menu .current, form.search input[type="text"], dd.autocomplete li.input, input[type="radio"], select, input[type="checkbox"], input[type="file"], input.number, p input, p select, .heading select, li select, input:focus, select:focus, textarea:focus, input, textarea, p.type, .meta dd {
   word-spacing: 0.21em;
   letter-spacing: 0.02em;
   font-size: 1.1em; }
@@ -846,6 +846,12 @@ textarea {
 .blurb dl.stats {
   float: initial;
   text-align: left; }
+
+.home .header .userstuff, .home .header dl.stats, .home .header .type {
+  /*
+  Collection pages have a weird margin left??? why??
+  */
+  margin-left: initial; }
 
 span.offered.requested {
   color: #F2AA4C; }

@@ -67,9 +67,9 @@ h5.fandoms.heading,
   margin: 0px !important; }
 
 .user h2.heading,
-.admin h2.heading {
+.admin h2.heading, .collection h2.heading {
   /*
-  Centers Usernames and titles in admin pages
+  Centers Usernames and titles in admin pages and collections
   */
   margin: 10px auto;
   text-align: center; }
@@ -178,7 +178,7 @@ h5.fandoms.heading,
  Work Page
 ===========
 */
-#workskin {
+#workskin, .collection blockquote.userstuff {
   /*
   This resets the main page width to a decent size for mobile
   */
@@ -197,9 +197,20 @@ div.preface,
 .preface.group blockquote.userstuff {
   /*
   reduces the indent in the blockquotes and the author's note
-  probably I should add it to lists too.
   */
   margin: 0; }
+
+.userstuff ul {
+  /*
+  reduces the indent in the lists
+  */
+  padding: 0; }
+
+.userstuff li, .userstuff ol ul li {
+  /*
+  reduces the indent in the lists
+  */
+  margin-inline-start: 1em; }
 
 .home .header .userstuff,
 .home .header dl.stats,
@@ -228,9 +239,9 @@ dl.meta dd {
 ===========
 */
 .user .primary p.icon,
-.admin .primary .icon {
+.admin .primary .icon, .collection .icon {
   /* 
-  centers the icons on profile pages and news posts
+  centers the icons on profile pages, collections and news posts
   */
   position: initial;
   margin: 10px auto; }
@@ -304,6 +315,6 @@ Fixing actual errors from default Ao3
   top: 522px !important; }
 
 .assigned.module th[scope="col"],
-.assigned.module thead th[scope="col"] {
+thead th[scope="col"] {
   max-width: 18px;
   overflow: hidden; }
