@@ -1,3 +1,8 @@
+/*
+===========================
+General font and text stuff
+===========================
+*/
 h1,
 h2,
 h3,
@@ -17,7 +22,11 @@ h6,
 .home .header h2,
 .preface h3,
 .faq .categories h3,
-.userstuff h3 {
+.userstuff h3,
+#footer a {
+  /*
+  Removes all the underlines from titles
+  */
   border-bottom: none; }
 
 body,
@@ -25,7 +34,17 @@ input,
 .toggled form,
 .dynamic form,
 .secondary,
-.dropdown, button, blockquote, .filters dt, .filters dd, .filters input[type="submit"], .filters .expander, .bookmark .user .meta, .datetime, a.work {
+.dropdown,
+button,
+blockquote,
+.filters dt,
+.filters dd,
+.filters input[type="submit"],
+.filters .expander,
+.bookmark .user .meta,
+.datetime,
+a.work,
+span.symbol, .splash .news .meta {
   /*
 This is the font for the entire body of text. If you need to change it please do it here
 Please also remember to provide fallback fonts 
@@ -38,100 +57,60 @@ input,
 .toggled form,
 .dynamic form,
 .secondary,
-.dropdown, button {
-  font-size: 110%;
-  line-height: 1.125; }
+.dropdown,
+button, #main {
+  font-size: 1.05em;
+  line-height: 1.8em; }
 
 blockquote {
-  font-size: 100%;
-  line-height: 1.125; }
+  font-size: 1.05em;
+  line-height: 1.8em; }
 
-.filters dt, .filters dd, .filters input[type="submit"], .filters .expander {
-  font-size: 95%;
-  line-height: 1.125; }
+p.note {
+  font-size: 1.05em;
+  line-height: 1.8em; }
+
+.filters dt,
+.filters dd,
+.filters input[type="submit"],
+.filters .expander {
+  font-size: 0.84em;
+  line-height: 1.8em; }
+
+h4.heading {
+  /*ALLTHETITLESSSS*/
+  font-size: 1.64062em;
+  font-weight: 700; }
 
 h4 {
-  font-size: 1.7em; }
+  /* should this be here if I resets it later? */
+  font-size: 1.3125em; }
 
 h4.heading .datetime {
-  font-size: .5em; }
+  /* slightly bigger date on blurbs*/
+  padding: 5px;
+  font-size: 0.5376em; }
 
 .preface a:hover {
   text-decoration: none; }
 
+#header {
+  font-size: 1.05em; }
+
+/*
+========
+Buttons!
+========
+*/
 .actions a,
 .actions a:link,
 .action,
 .action:link,
 button,
 .current,
-.actions label {
-  border: none;
-  background-image: none;
-  box-shadow: none;
-  -webkit-appearance: none; }
-
-.actions input,
+.actions label, .actions input,
 input[type="submit"],
-textarea {
-  border: 1px solid;
-  background-image: none;
-  box-shadow: none;
-  -webkit-appearance: none; }
-
-input {
-  width: 96%;
-  border: 1px solid;
-  background-image: none;
-  box-shadow: none; }
-
-form.search input[type="text"], dd.autocomplete li.input, input[type="radio"], select, input[type="checkbox"], input[type="file"], input.number, p input, p select, .heading select, li select, input:focus, select:focus, textarea:focus, input, textarea {
-  border: 0px;
-  color: currentColor; }
-
-.actions a:hover,
-a:hover,
-.actions input:hover,
-#dashboard a:hover,
-.actions a:focus,
-.actions input:focus,
-#dashboard a:focus,
-.actions a:active,
-.current,
-a.current,
-.current a:visited,
-.actions a:hover,
-.actions input:hover,
-#dashboard a:hover,
-.actions a:focus,
-.actions input:focus,
-#dashboard a:focus,
-.actions a:active,
-.current,
-a.current,
-.current a:visited,
-#dashboard .current,
-.actions a:active,
-#outer .current,
-#header .current,
-a.current,
-.current a:visited,
-span.unread,
-.replied,
-span.claimed,
-dl.index dd,
-.own,
-.draft,
-.draft .unread,
-.child,
-.unwrangled,
-.unreviewed,
-.ui-sortable li:hover,
-#header .primary .menu .current {
-  border-color: initial;
-  box-shadow: none !important; }
-
-#header .primary,
+textarea, input, #header .primary,
 .group.listbox,
 fieldset fieldset.listbox,
 #main li.blurb,
@@ -141,7 +120,6 @@ fieldset fieldset.listbox,
 form blockquote.userstuff,
 .thread .comment,
 .toggled form,
-#header .primary,
 .listbox .index,
 form .notice,
 form ul.notes,
@@ -154,11 +132,65 @@ fieldset dl dl,
 fieldset fieldset fieldset,
 fieldset fieldset dl dl,
 dd.hideme,
-form blockquote.userstuff,
 .delete a,
 span.delete,
-#header ul.primary {
+#header ul.primary, .notice,
+.comment_notice,
+ul.notes,
+.caution,
+.error,
+.comment_error,
+.alert.flash,
+.actions a:hover,
+.actions input:hover,
+.actions a:focus,
+.actions input:focus,
+label.action:hover,
+.action:hover,
+.action:focus,
+.dynamic form,
+.ui-draggable form, #header .menu,
+#small_login,
+#header .dropdown:hover .current + .menu,
+.event .userstuff {
+  /*
+  This resets the shadows
+  */
   box-shadow: none; }
+
+.actions a,
+.actions a:link,
+.action,
+.action:link,
+button,
+.current,
+.actions label, .actions input,
+input[type="submit"],
+textarea, input, form .notice,
+form ul.notes,
+form.verbose legend,
+.verbose form legend, #footer,
+.autocomplete .dropdown ul li:hover,
+li.selected,
+.autocomplete a:hover {
+  /*
+  This resets the background image from default skin
+  */
+  background-image: none; }
+
+.actions a,
+.actions a:link,
+.action,
+.action:link,
+button,
+.current,
+.actions label, .actions input,
+input[type="submit"],
+textarea {
+  /*
+  Further 3d elements to reset in webkit browsers
+  */
+  -webkit-appearance: none; }
 
 .notice,
 .comment_notice,
@@ -174,22 +206,85 @@ ul.notes,
 label.action:hover,
 .action:hover,
 .action:focus,
-.notice,
-.comment_notice,
-ul.notes,
-.caution,
-.error,
-.comment_error,
-.alert.flash,
+.toggled form,
+.dynamic form,
+.ui-draggable form, form .notice,
+form ul.notes,
+form.verbose legend,
+.verbose form legend,
+.actions a,
+.actions a:link,
+.action,
+.action:link,
+input[type="submit"],
+button,
+.current,
+.actions label {
+  /* Sets the style for border buttons */
+  border: none; }
+
+.actions a,
+.actions a:link,
+.action,
+.action:link,
+button,
+.current,
+.actions label {
+  border: none; }
+
+input {
+  width: 96%;
+  border: 1px solid; }
+
+form.search input[type="text"],
+dd.autocomplete li.input,
+input[type="radio"],
+select,
+input[type="checkbox"],
+input[type="file"],
+input.number,
+p input,
+p select,
+.heading select,
+li select,
+input:focus,
+select:focus,
+textarea:focus,
+input,
+textarea {
+  border: 0px;
+  color: currentColor; }
+
 .actions a:hover,
+a:hover,
 .actions input:hover,
+#dashboard a:hover,
 .actions a:focus,
 .actions input:focus,
-label.action:hover,
-.action:hover,
-.action:focus, .toggled form, .dynamic form, .ui-draggable form {
-  border: none;
-  box-shadow: none; }
+#dashboard a:focus,
+.actions a:active,
+.current,
+a.current,
+.current a:visited,
+#dashboard .current,
+#outer .current,
+#header .current,
+span.unread,
+.replied,
+span.claimed,
+dl.index dd,
+.own,
+.draft,
+.draft .unread,
+.child,
+.unwrangled,
+.unreviewed,
+.ui-sortable li:hover,
+#header .primary .menu .current {
+  /* resets the border color */
+  border-color: initial;
+  /* extra aggressive shadow removing */
+  box-shadow: none !important; }
 
 form .notice,
 form ul.notes,
@@ -203,13 +298,14 @@ input[type="submit"],
 button,
 .current,
 .actions label {
-  border: none;
-  border-bottom: none;
-  background-image: none;
-  box-shadow: none; }
+  border-bottom: none; }
 
 .listbox .index,
-.dashboard .listbox .index, .splash .news li, form dt, .picture .header {
+.dashboard .listbox .index,
+.splash .news li,
+form dt,
+.picture .header {
+  /* some stuff needs some aggressive non-bordering*/
   border: none;
   border-bottom: none;
   border-top: none;
@@ -218,31 +314,48 @@ button,
 
 #header .menu,
 #small_login,
-#header .dropdown:hover .current + .menu, .event .userstuff {
-  box-shadow: none;
-  background-image: none;
+#header .dropdown:hover .current + .menu,
+.event .userstuff {
   filter: none; }
 
-#footer, .autocomplete .dropdown ul li:hover, li.selected, autocomplete a:hover {
-  background-image: none; }
+.event .userstuff a,
+.event .userstuff a:link,
+.event .userstuff a:visited {
+  border-bottom: 1px solid; }
 
-.autocomplete input, .autocomplete .dropdown ul li {
+.autocomplete input,
+.autocomplete .dropdown ul li {
   min-width: 10px; }
 
-.filters .expander, .filters .expanded .expander {
+/*
+============
+  Filters!
+============
+
+*/
+.filters .expander,
+.filters .expanded .expander {
+  /* sets the spacing and font of the filter expander text */
   padding: 0px;
   font-size: 1.05em;
   background: none; }
 
 .filters .expander::before {
+  /* These is the arrow for the filters */
   content: "\2799"; }
 
 .filters .expanded .expander::before {
+  /* These is the arrow for the filters when expanded */
   content: "\2798"; }
 
 .filters input:checked + .indicator + span {
+  /*resets the weight from the Ao3 default skin*/
   font-weight: inherit; }
 
+/*
+This is the very complicated code for the checkboxes and the radio
+yes I hate it too
+*/
 .filters [type="radio"] + .indicator:before {
   content: "";
   width: .8em;
@@ -263,7 +376,8 @@ button,
   background-color: #4675C0;
   border: none; }
 
-.filters [type="checkbox"] + .indicator:before, .filters .exclude [type="checkbox"] + .indicator:before {
+.filters [type="checkbox"] + .indicator:before,
+.filters .exclude [type="checkbox"] + .indicator:before {
   content: "";
   width: .8em;
   height: .8em;
@@ -274,7 +388,8 @@ button,
   background-color: #e4e4eb;
   border: none; }
 
-.filters [type="checkbox"]:checked + .indicator:before, .filters .exclude [type="checkbox"]:checked + .indicator:before {
+.filters [type="checkbox"]:checked + .indicator:before,
+.filters .exclude [type="checkbox"]:checked + .indicator:before {
   content: "";
   width: .8em;
   height: .8em;
@@ -288,7 +403,8 @@ button,
 .filters .exclude [type="checkbox"]:checked + .indicator:before {
   background-color: #A62637; }
 
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
   background-color: #e4e4eb;
   border: 1px solid #4675C0;
   display: inline-block;
@@ -306,10 +422,16 @@ input[type="checkbox"], input[type="radio"] {
 input[type="radio"] {
   border-radius: 50%; }
 
-.actions input[type="checkbox"], label.action input[type="checkbox"] {
+.actions input[type="checkbox"],
+label.action input[type="checkbox"] {
   background-color: #e4e4eb; }
 
-input[type="checkbox"]:checked, input[type="radio"]:checked, .actions input[type="checkbox"]:checked, label.action input[type="checkbox"]:checked, input[type="checkbox"]:hover, .actions input[type="checkbox"]:hover {
+input[type="checkbox"]:checked,
+input[type="radio"]:checked,
+.actions input[type="checkbox"]:checked,
+label.action input[type="checkbox"]:checked,
+input[type="checkbox"]:hover,
+.actions input[type="checkbox"]:hover {
   background-color: #4675C0;
   border: none;
   display: inline-block;
@@ -324,9 +446,55 @@ input[type="checkbox"]:checked, input[type="radio"]:checked, .actions input[type
   -ms-user-select: none;
   user-select: none; }
 
-.event .userstuff a, .event .userstuff a:link, .event .userstuff a:visited {
-  border-bottom: 1px solid; }
+/*
+===============================
+Borders and boxes in the layout
+===============================
+*/
+fieldset,
+form dl,
+fieldset dl dl,
+fieldset fieldset,
+fieldset fieldset fieldset,
+fieldset fieldset dl dl,
+dd.hideme,
+form blockquote.userstuff,
+.listbox,
+.listbox .index,
+fieldset fieldset.listbox,
+.own,
+.draft,
+.draft .wrapper,
+.unread,
+.child,
+.unwrangled,
+.unreviewed,
+form.verbose legend,
+.verbose form legend,
+li.blurb,
+li.comment,
+.comment h4.byline,
+dl.index dd,
+form blockquote.userstuff,
+table,
+tr,
+th,
+td,
+thead,
+tfoot,
+.reading h4.viewed {
+  /* it removes the color background */
+  background: transparent; }
 
+.secondary,
+th,
+thead,
+tbody tr,
+dl.meta,
+li.post.group,
+.faq .example,
+.guideline .example,
+tr:hover,
 fieldset,
 form dl,
 fieldset dl dl,
@@ -344,15 +512,10 @@ fieldset fieldset.listbox,
 .unwrangled,
 .unreviewed,
 form.verbose legend,
-.verbose form legend, li.blurb, fieldset, form dl, li.comment {
-  background: transparent;
-  border: 2px solid;
-  border-radius: 5px; }
-
-.secondary,
-th,
-thead,
-tbody tr, dl.meta, li.post.group, .faq .example, .guideline .example, tr:hover {
+.verbose form legend,
+li.blurb,
+li.comment {
+  /* sets the border shapes */
   border: 2px solid;
   border-radius: 5px; }
 
@@ -363,21 +526,12 @@ li.post.group {
   border-bottom: 2px solid;
   border-radius: 5px; }
 
-.comment h4.byline,
-dl.index dd,
-.listbox .index,
-fieldset fieldset,
-fieldset dl dl,
-form blockquote.userstuff,
-table,
 tr,
 th,
 td,
 thead,
-tfoot, .reading h4.viewed {
-  background: transparent; }
-
-tr, th, td, thead, tfoot {
+tfoot {
+  /* this is for tables.*/
   vertical-align: middle; }
 
 .bookmark .user,
@@ -387,7 +541,17 @@ dl.index dd,
 div.comment,
 #modal,
 #dashboard.own,
-#dashboard ul, .autocomplete div.dropdown ul, .event .userstuff {
+#dashboard ul,
+.autocomplete div.dropdown ul,
+.event .userstuff,
+#dashboard.own,
+#dashboard ul,
+.splash .module h3,
+.comment div.icon,
+a,
+a:link,
+a:visited:hover {
+  /* remove borders */
   border: none; }
 
 #dashboard.own,
@@ -397,20 +561,58 @@ div.comment,
 a,
 a:link,
 a:visited:hover {
+  /* 
+  further removes borders to those classes where there's a top and bottom border set
+  */
   border-top: none;
-  border-bottom: none;
-  border: none; }
+  border-bottom: none; }
 
 span.symbol {
+  /* 
+  what the hell does this changes I can't remember
+  */
   color: initial;
-  font-family: "Trebuchet MS", Calibri, sans-serif;
   border: 1px solid;
   vertical-align: middle; }
 
 .blurb .header img {
+  /* 
+  what the hell.
+  there are no img tags in the blurb wtf?
+  */
   vertical-align: baseline;
   padding: 3px;
   border-radius: 3px; }
+
+.tag .primary .icon,
+.tagset .primary .icon {
+  background: url(/images/imageset.png) -10px -285px; }
+
+.skins .primary .icon {
+  background: url(/images/imageset.png) -10px -185px; }
+
+.comment h4.byline {
+  padding: .25em; }
+
+.abbreviated h4.byline {
+  padding-left: .25em; }
+
+.comment div.icon {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px; }
+
+.comment .icon .visitor {
+  background: url(/images/imageset.png) no-repeat -10px -85px;
+  display: block; }
+
+.icon {
+  height: 80px;
+  width: 80px; }
+
+.comment .posted {
+  display: block;
+  float: none; }
 
 body,
 #header,
@@ -421,7 +623,7 @@ body,
 .filters .expander {
   color: #373a3c;
   background-color: #f7f7f9;
-  font-size: 1.1em;
+  font-size: 1.05em;
   letter-spacing: 0.02em;
   word-spacing: 0.21em;
   line-height: 1.8em; }
@@ -429,8 +631,12 @@ body,
 #header {
   line-height: initial; }
 
-#workskin, .blurb .userstuff, .news .userstuff, .system .userstuff, .collection blockquote.userstuff {
-  font-size: 1.1em;
+#workskin,
+.blurb .userstuff,
+.news .userstuff,
+.system .userstuff,
+.collection blockquote.userstuff {
+  font-size: 1.05em;
   width: 70%;
   margin: auto !important;
   max-width: 45em;
@@ -452,10 +658,6 @@ body,
   display: block;
   max-width: 90%; }
 
-.icon {
-  height: 80px;
-  width: 80px; }
-
 div#comments_placeholder {
   width: 70%;
   margin: auto;
@@ -463,30 +665,88 @@ div#comments_placeholder {
   max-width: 45em; }
 
 #chapters,
-#chapters p, textarea, #footer li, .preface.group blockquote.userstuff, .preface.group blockquote.userstuff p, .userstuff p, #footer li, .comment .userstuff {
+#chapters p,
+textarea,
+#footer li,
+.preface.group blockquote.userstuff,
+.preface.group blockquote.userstuff p,
+.userstuff p,
+#footer li,
+.comment .userstuff {
   text-align: left;
   word-spacing: 0.21em;
   line-height: 1.8em; }
 
-.blurb dl.stats, .actions li a, .actions li input, .actions li input[type="submit"], input[type="submit"], .actions li .current, .actions li label, #header .primary .menu a, #header .primary .menu .current, form.search input[type="text"], dd.autocomplete li.input, input[type="radio"], select, input[type="checkbox"], input[type="file"], input.number, p input, p select, .heading select, li select, input:focus, select:focus, textarea:focus, input, textarea, p.type, .meta dd {
+.blurb dl.stats,
+.actions li a,
+.actions li input,
+.actions li input[type="submit"],
+input[type="submit"],
+.actions li .current,
+.actions li label,
+#header .primary .menu a,
+#header .primary .menu .current,
+form.search input[type="text"],
+dd.autocomplete li.input,
+input[type="radio"],
+select,
+input[type="checkbox"],
+input[type="file"],
+input.number,
+p input,
+p select,
+.heading select,
+li select,
+input:focus,
+select:focus,
+textarea:focus,
+input,
+textarea,
+p.type,
+.meta dd {
   word-spacing: 0.21em;
   letter-spacing: 0.02em;
-  font-size: 1.1em; }
+  font-size: 1.05em; }
 
 .userstuff p {
   margin: 2em auto; }
 
-textarea, #footer li, .comment .userstuff, form.search input[type="text"], dd.autocomplete li.input, input[type="radio"], select, input[type="checkbox"], input[type="file"], input.number, p input, p select, .heading select, li select, input:focus, select:focus, textarea:focus, input {
-  font-size: 1.1em; }
+textarea,
+#footer li,
+.comment .userstuff,
+form.search input[type="text"],
+dd.autocomplete li.input,
+input[type="radio"],
+select,
+input[type="checkbox"],
+input[type="file"],
+input.number,
+p input,
+p select,
+.heading select,
+li select,
+input:focus,
+select:focus,
+textarea:focus,
+input {
+  font-size: 1.05em; }
 
-a.tag, a.tag:visited, a.tag:link {
+a.tag,
+a.tag:visited,
+a.tag:link {
   color: #373a3c;
-  padding: 4px;
+  padding: 4px 7px;
   line-height: 2.3em;
   border: 2px solid #4675C0;
   border-radius: 5px; }
 
-html, body, div, span, applet, object, iframe,
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
 p,
 blockquote,
 pre,
@@ -525,37 +785,40 @@ label,
 legend,
 table,
 caption,
-tbody, tfoot, thead, tr, th, td {
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
   font-size: 100%; }
 
 h1 {
-  font-size: 2.60545em;
+  font-size: 2.05078em;
   font-weight: 600; }
 
 #header h1 {
-  font-size: 1.1em;
+  font-size: 1.05em;
   font-weight: 700; }
 
 h2 {
-  font-size: 2.60545em;
+  font-size: 2.05078em;
   font-weight: 600; }
 
 h3 {
-  font-size: 1.95458em;
+  font-size: 1.64062em;
   line-height: 1.8em; }
 
 h4 {
-  font-size: 1.4663em; }
-
-h4.heading {
-  font-size: 1.8em;
-  font-weight: 700; }
+  font-size: 1.3125em; }
 
 h5,
-h6, h4.viewed {
-  font-size: 1.1em; }
+h6,
+h4.viewed {
+  font-size: 1.05em; }
 
-#main.system h2.heading, #main.system h3.heading {
+#main.system h2.heading,
+#main.system h3.heading {
   text-align: center;
   margin: auto;
   display: block; }
@@ -602,10 +865,18 @@ a.tag:link,
 .blurb h4 a,
 .blurb h4 a:visited,
 #dashboard a,
-#dashboard span, #header .user a:hover, #header .user a:focus, #header .user .current, li::marker, .draggable, .droppable {
+#dashboard span,
+#header .user a:hover,
+#header .user a:focus,
+#header .user .current,
+li::marker,
+.draggable,
+.droppable {
   color: #4675C0; }
 
-.blurb ul li, .blurb dd ul li, .meta dd ul li {
+.blurb ul li,
+.blurb dd ul li,
+.meta dd ul li {
   display: inline-block;
   margin: 0; }
 
@@ -673,12 +944,15 @@ li.selected {
 tr:hover,
 #outer .current,
 .thread .even {
-  background-color: #ededf2; }
+  background-color: #ededf2;
+  /* needs this too to override some instances */
+  background: #ededf2; }
 
 a.modal.help:hover {
   background-color: transparent; }
 
-#header h2.collections, #header h2 {
+#header h2.collections,
+#header h2 {
   border-top: none;
   text-align: center; }
 
@@ -696,7 +970,9 @@ ul.notes,
   background-color: #8FC8EB;
   color: #373a3c; }
 
-.notice a, .notice a:link, .notice a:visited {
+.notice a,
+.notice a:link,
+.notice a:visited {
   color: #f7f7f9; }
 
 fieldset,
@@ -725,12 +1001,18 @@ tbody tr,
 li.blurb,
 fieldset,
 form dl,
-dl.meta, li.post.group, .splash .news li:last-of-type, li.comment, .faq .example, .guideline .example {
+dl.meta,
+li.post.group,
+.splash .news li:last-of-type,
+li.comment,
+.faq .example,
+.guideline .example {
   border-color: #4675C0; }
 
 .required,
 .error,
-.alert.flash, .nominations .rejected {
+.alert.flash,
+.nominations .rejected {
   color: #A62637; }
 
 .secondary {
@@ -791,37 +1073,20 @@ textarea {
 #greeting p.icon {
   display: none; }
 
-.tag .primary .icon, .tagset .primary .icon {
-  background: url(/images/imageset.png) -10px -285px; }
-
-.skins .primary .icon {
-  background: url(/images/imageset.png) -10px -185px; }
-
 #header .primary {
   background: #4675C0; }
 
 .tox .tox-edit-area__iframe {
   background-color: red; }
 
-.comment h4.byline {
-  padding: .25em; }
-
-.abbreviated h4.byline {
-  padding-left: .25em; }
-
-.comment div.icon {
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 10px; }
-
-.comment .icon .visitor {
-  background: url(/images/imageset.png) no-repeat -10px -85px;
-  display: block; }
-
-.filters dt, .filters dd, .filters input[type="submit"], .filters .expander {
+.filters dt,
+.filters dd,
+.filters input[type="submit"],
+.filters .expander {
   font-size: 100%; }
 
-.filters .expander, .filters .expanded .expander {
+.filters .expander,
+.filters .expanded .expander {
   background-color: #4675C0;
   color: #f7f7f9;
   border: 2px solid #4675C0;
@@ -831,7 +1096,8 @@ textarea {
 #header .heading {
   margin-left: 2em; }
 
-#login, #greeting {
+#login,
+#greeting {
   margin-top: 10px; }
 
 .commas li:after {
@@ -847,7 +1113,9 @@ textarea {
   float: initial;
   text-align: left; }
 
-.home .header .userstuff, .home .header dl.stats, .home .header .type {
+.home .header .userstuff,
+.home .header dl.stats,
+.home .header .type {
   /*
   Collection pages have a weird margin left??? why??
   */
@@ -856,18 +1124,30 @@ textarea {
 span.offered.requested {
   color: #F2AA4C; }
 
-span.offered, .replied, .nominations .approved {
+span.offered,
+.replied,
+.nominations .approved {
   color: #75BD57; }
 
-span.requested, .nominations .rejected {
+span.requested,
+.nominations .rejected {
   color: #A62637; }
 
-u, acronym[title] {
+/* 
+Basic fic formatting (bold, italics and underline) 
+*/
+u,
+acronym[title] {
   text-decoration: none;
+  /* To remove the colored underline from the skin just remove the following line (border-bottom etc etc)
+  This will leave a nice, readable bold text */
   border-bottom: 2px solid #4675C0;
+  padding-bottom: 4px;
+  /* stop deleting!*/
   font-weight: 700; }
 
-b, strong {
+b,
+strong {
   font-weight: 700; }
 
 /*
@@ -876,7 +1156,9 @@ them into bold instead for easier dyslexia reading.
 This will override what the fic author's decided to use.
 If you prefer you can delete it and all will return to normal 
 */
-i, em, cite {
+i,
+em,
+cite {
   font-style: normal;
   font-weight: 700; }
 
