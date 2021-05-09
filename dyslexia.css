@@ -423,7 +423,9 @@ Basic fic formatting
 */
 u,
 acronym[title] {
-  /* To remove the colored underline from the skin just remove 
+  /* 
+    --------UNDERLINE---------
+    To remove the colored underline from the skin just remove 
     the following 2 lines (border-bottom etc etc and padding-bottom etc etc)
     This will leave a nice, readable bold text 
     */
@@ -439,6 +441,7 @@ strong {
   font-weight: 700; }
 
 /*
+--------ITALICS---------
 The following code remove all the italics and changes 
 them into bold instead for easier dyslexia reading. 
 This will override what the fic author's decided to use.
