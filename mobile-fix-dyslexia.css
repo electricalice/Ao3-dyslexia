@@ -224,6 +224,15 @@ dl.meta dd {
   */
   margin-left: auto; }
 
+.chapter .secondary, .download .secondary {
+  /*
+  This moves the download option and the chapter option
+  in a better position
+  */
+  top: initial;
+  right: 0;
+  margin: 10px; }
+
 /*
 ===========
   Blurb
