@@ -53,12 +53,6 @@ h2.heading {
   font-size: 1.8em;
   font-weight: 600; }
 
-.blurb h4.heading {
-  /*
-  accomodates the required tags
-  */
-  margin: .375em .375em 0 65px !important; }
-
 h5.fandoms.heading,
 .news h4.heading,
 #footer h4.heading,
@@ -242,7 +236,38 @@ dl.meta dd {
   /*
   Moves the date of the fic from the top left
   */
-  position: relative; }
+  position: initial; }
+
+.tags li {
+  /* removes the padding that was useful for desktop */
+  padding-right: 0; }
+
+li.blurb, .blurb .blurb {
+  /* a little less padding in the blurb*/
+  padding: 5px; }
+
+.blurb ul.tags.commas, .blurb h5.fandoms.heading {
+  /* slightly smaller tags */
+  font-size: 90%; }
+
+.blurb h5.fandoms.heading {
+  padding-top: 10px; }
+
+/* the following lines of codes rearrange the required tags icons*/
+.blurb h4.heading {
+  margin: 0 !important; }
+
+.blurb ul.required-tags {
+  position: initial;
+  top: initial;
+  display: flex; }
+
+.blurb ul.required-tags li + li + li, .blurb ul.required-tags li + li + li + li {
+  position: initial;
+  left: initial; }
+
+.blurb ul.required-tags li {
+  padding-right: 6px; }
 
 /*
 ===========
@@ -287,6 +312,14 @@ div#comments_placeholder,
 
 /*
 ===========
+TAG PAGES
+===========
+*/
+ol.pagination {
+  max-width: 90%; }
+
+/*
+===========
   Footer
 ===========
 */
@@ -318,6 +351,11 @@ Resets stuff from Ao3 default skin
 .javascript,
 .filters dt {
   background-color: transparent; }
+
+li.showme a.actions {
+  /* button show most recent bookmarks on mobile is too long*/
+  white-space: normal;
+  height: initial; }
 
 /*
 Fixing actual errors from default Ao3
