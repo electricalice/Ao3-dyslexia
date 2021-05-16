@@ -872,6 +872,9 @@ properly positioned
   display: block;
   float: none; }
 
+.fandom .group.listbox {
+  width: 100%; }
+
 /*
 ======================
   General settings
@@ -1018,6 +1021,9 @@ a.tag:link {
   puts stats on the left of the blurb
   */
   float: initial; }
+
+.meta ul li {
+  padding-left: 0; }
 
 .blurb ul li,
 .blurb dd ul li,
@@ -1272,9 +1278,9 @@ form dd.required,
 .filters dd,
 .filters input[type="submit"],
 #header .primary .menu a,
-#header .primary .menu .current, #outer .current,
+#header .primary .menu .current, #outer .current, .userstuff h2,
 .dropdown,
-.splash .favorite li:nth-of-type(odd) a,
+.splash .favorite li:nth-of-type(odd) a, .statistics .index li:nth-of-type(even),
 input#site_search:focus,
 #header #search input:focus,
 .autocomplete div.dropdown ul,
@@ -1343,7 +1349,7 @@ button,
 .current,
 .actions label,
 .dropdown,
-.splash .favorite li:nth-of-type(odd) a,
+.splash .favorite li:nth-of-type(odd) a, .statistics .index li:nth-of-type(even),
 input#site_search:focus,
 #header #search input:focus,
 .autocomplete div.dropdown ul,

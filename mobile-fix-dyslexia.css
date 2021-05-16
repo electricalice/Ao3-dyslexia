@@ -184,10 +184,13 @@ p.kudos {
   /*
   Resets the padding for kudos username list and moves the kudos image
   */
-  background: url(/images/imageset.png) no-repeat -110px -580px;
-  padding: 4em 0 0 0;
-  min-height: 50px;
+  background: none;
+  padding: 0;
+  min-height: 0;
   word-break: break-word; }
+
+p.kudos::before {
+  content: "Kudos:"; }
 
 div.preface,
 .preface.group blockquote.userstuff {
@@ -237,14 +240,6 @@ dl.meta dd {
   Moves the date of the fic from the top left
   */
   position: initial; }
-
-.tags li {
-  /* removes the padding that was useful for desktop */
-  padding-right: 0; }
-
-li.blurb, .blurb .blurb {
-  /* a little less padding in the blurb*/
-  padding: 5px; }
 
 .blurb ul.tags.commas, .blurb h5.fandoms.heading {
   /* slightly smaller tags */

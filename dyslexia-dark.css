@@ -875,6 +875,9 @@ properly positioned
 .group.listbox {
   border: 1px solid transparent; }
 
+.fandom .group.listbox {
+  width: 100%; }
+
 /*
 ======================
   General settings
@@ -1021,6 +1024,9 @@ a.tag:link {
   puts stats on the left of the blurb
   */
   float: initial; }
+
+.meta ul li {
+  padding-left: 0; }
 
 .blurb ul li,
 .blurb dd ul li,
@@ -1181,7 +1187,6 @@ input[type="radio"],
 select,
 input[type="file"],
 input.number,
-p input,
 p select,
 .heading select,
 li select,
@@ -1198,7 +1203,7 @@ textarea {
   background-color: #43566b;
   border-radius: 5px; }
 
-input[type="checkbox"] {
+p input, input[type="checkbox"] {
   border-top-color: #43566b;
   border-color: #43566b;
   background-color: #43566b; }
@@ -1276,9 +1281,9 @@ form dd.required,
 .filters dd,
 .filters input[type="submit"],
 #header .primary .menu a,
-#header .primary .menu .current, #outer .current,
+#header .primary .menu .current, #outer .current, .userstuff h2,
 .dropdown,
-.splash .favorite li:nth-of-type(odd) a,
+.splash .favorite li:nth-of-type(odd) a, .statistics .index li:nth-of-type(even),
 input#site_search:focus,
 #header #search input:focus,
 .autocomplete div.dropdown ul,
@@ -1289,7 +1294,6 @@ input[type="radio"],
 select,
 input[type="file"],
 input.number,
-p input,
 p select,
 .heading select,
 li select,
@@ -1297,7 +1301,7 @@ input:focus,
 select:focus,
 textarea:focus,
 input,
-textarea, input[type="checkbox"], .announcement input[type="submit"],
+textarea, p input, input[type="checkbox"], .announcement input[type="submit"],
 .announcement .action, .notice,
 .comment_notice,
 ul.notes,
@@ -1348,7 +1352,7 @@ button,
 .current,
 .actions label,
 .dropdown,
-.splash .favorite li:nth-of-type(odd) a,
+.splash .favorite li:nth-of-type(odd) a, .statistics .index li:nth-of-type(even),
 input#site_search:focus,
 #header #search input:focus,
 .autocomplete div.dropdown ul,
@@ -1569,7 +1573,7 @@ fieldset,
 li.blurb,
 .wrapper,
 li.comment,
-#main li.blurb {
+#main li.blurb, div#user-fandoms, li.post.group, .fandom .group.listbox {
   background-color: #212d3b;
   border-radius: 5px; }
 
