@@ -430,7 +430,7 @@ acronym[title], abbr[title] {
     This will leave a nice, readable bold text 
     */
   /* start deleting here -> */
-  border-bottom: none #3aacff;
+  border-bottom: 2px solid #3aacff;
   padding-bottom: 4px;
   /* <- stop deleting here for the underline thingy! Leave the rest*/
   text-decoration: none;
@@ -1281,7 +1281,7 @@ form dd.required,
 .filters dd,
 .filters input[type="submit"],
 #header .primary .menu a,
-#header .primary .menu .current, #outer .current, .userstuff h2,
+#header .primary .menu .current, #outer .current, .userstuff h2, label, .autocomplete li.added, .post .meta dd ul li.added,
 .dropdown,
 .splash .favorite li:nth-of-type(odd) a, .statistics .index li:nth-of-type(even),
 input#site_search:focus,
@@ -1470,7 +1470,7 @@ input[type="submit"]:hover,
 .event .userstuff a:visited,
 .listbox .index a:hover,
 .autocomplete .dropdown ul li:hover,
-li.selected, .notice a,
+li.selected, li.dropdown, .notice a,
 .notice a:link,
 .notice a:visited, .filters .expander,
 .filters .expanded .expander {
@@ -1573,7 +1573,7 @@ fieldset,
 li.blurb,
 .wrapper,
 li.comment,
-#main li.blurb, div#user-fandoms, li.post.group, .fandom .group.listbox {
+#main li.blurb, div#user-fandoms, .draft, li.post.group, .fandom .group.listbox {
   background-color: #212d3b;
   border-radius: 5px; }
 

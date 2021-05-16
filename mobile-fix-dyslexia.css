@@ -241,7 +241,7 @@ dl.meta dd {
   */
   position: initial; }
 
-.blurb ul.tags.commas, .blurb h5.fandoms.heading {
+.blurb ul.tags.commas, .blurb h5.fandoms.heading, dd a.tag {
   /* slightly smaller tags */
   font-size: 90%; }
 
