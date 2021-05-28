@@ -878,6 +878,9 @@ properly positioned
 .fandom .group.listbox {
   width: 100%; }
 
+form.inbox {
+  overflow-x: initial; }
+
 /*
 ======================
   General settings
