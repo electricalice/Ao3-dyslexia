@@ -17,14 +17,16 @@ body,
   please increase or decrease by decimals
   like 1.2em 1.1em or 1.5em
   */
-  font-size: 1.3em; }
+  font-size: 1.3em;
+}
 
 .userstuff {
   /*
-    don't change this if you are looking to change the font.
-    That option is a few lines before this one. (It's commented)
-    */
-  font-size: 110%; }
+  don't change this if you are looking to change the font.
+  That option is a few lines before this one. (It's commented)
+  */
+  font-size: 110%;
+}
 
 #footer .heading,
 .comment h4.byline,
@@ -38,7 +40,8 @@ dl.meta dd, h4.heading {
   Used in cases of long user names and long words 
   that otherwise would break the entire layout
   */
-  overflow-wrap: break-word; }
+  overflow-wrap: break-word;
+}
 
 /*
 ===========
@@ -46,12 +49,14 @@ dl.meta dd, h4.heading {
 ===========
 */
 h4 {
-  font-size: 1.2em; }
+  font-size: 1.2em;
+}
 
 h2,
 h2.heading {
   font-size: 1.8em;
-  font-weight: 600; }
+  font-weight: 600;
+}
 
 h5.fandoms.heading,
 .news h4.heading,
@@ -60,7 +65,8 @@ h5.fandoms.heading,
   /*
   changes back the other titles
   */
-  margin: 0px !important; }
+  margin: 0px !important;
+}
 
 .user h2.heading,
 .admin h2.heading, .collection h2.heading {
@@ -68,7 +74,8 @@ h5.fandoms.heading,
   Centers Usernames and titles in admin pages and collections
   */
   margin: 10px auto;
-  text-align: center; }
+  text-align: center;
+}
 
 /*
 ===========
@@ -77,24 +84,27 @@ h5.fandoms.heading,
 */
 #header .user .open a:focus {
   /*
-    This changes the color of the texts in the menu when it's selected
-    For some reason it's changed by Ao3 in the mobile version and not on the desktop skin
+  This changes the color of the texts in the menu when it's selected
+  For some reason it's changed by Ao3 in the mobile version and not on the desktop skin
 
-    Change this to the color you are using for your links
-    */
-  color: #4675C0; }
+  Change this to the color you are using for your links
+  */
+  color: #4675C0;
+}
 
 #header .primary {
   /*
   better spacing in the header
   */
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+}
 
 #header li {
   /*
   Makes the header items nicely ordered
   */
-  display: inline-block; }
+  display: inline-block;
+}
 
 #header .heading {
   /*
@@ -106,7 +116,8 @@ h5.fandoms.heading,
   float: none;
   font-size: 0.8em;
   padding: 0;
-  text-align: center; }
+  text-align: center;
+}
 
 #login,
 #greeting {
@@ -116,7 +127,8 @@ h5.fandoms.heading,
   margin-right: auto;
   margin-left: auto;
   float: none;
-  margin-top: 0px !important; }
+  margin-top: 0px !important;
+}
 
 #header .menu,
 #small_login,
@@ -130,7 +142,8 @@ h5.fandoms.heading,
   width: 100% !important;
   left: 0 !important;
   right: 0 !important;
-  position: fixed; }
+  position: fixed;
+}
 
 #header .menu,
 #small_login,
@@ -141,13 +154,15 @@ h5.fandoms.heading,
   /*
   despite what it looks like, this removes the distance from the dropdown menu
   */
-  width: auto; }
+  width: auto;
+}
 
 #header .primary .menu a {
   /* 
   The dropdown menu items will have enough space around them
   */
-  padding: .429em .75em; }
+  padding: 0.429em 0.75em;
+}
 
 /*
 ===========
@@ -161,13 +176,15 @@ h5.fandoms.heading,
   */
   border-bottom: 0px;
   border-top: 0px;
-  border: 0px; }
+  border: 0px;
+}
 
 #dashboard ul {
   /* 
   puts everything in the menu in a nice order
   */
-  display: inline-block; }
+  display: inline-block;
+}
 
 /*
 ===========
@@ -178,7 +195,8 @@ h5.fandoms.heading,
   /*
   This resets the main page width to a decent size for mobile
   */
-  width: 100% !important; }
+  width: 100% !important;
+}
 
 p.kudos {
   /*
@@ -187,29 +205,34 @@ p.kudos {
   background: none;
   padding: 0;
   min-height: 0;
-  word-break: break-word; }
+  word-break: break-word;
+}
 
 p.kudos::before {
-  content: "Kudos:"; }
+  content: "Kudos:";
+}
 
 div.preface,
 .preface.group blockquote.userstuff {
   /*
   reduces the indent in the blockquotes and the author's note
   */
-  margin: 0; }
+  margin: 0;
+}
 
 .userstuff ul {
   /*
   reduces the indent in the lists
   */
-  padding: 0; }
+  padding: 0;
+}
 
 .userstuff li, .userstuff ol ul li {
   /*
   reduces the indent in the lists
   */
-  margin-inline-start: 1em; }
+  margin-inline-start: 1em;
+}
 
 .home .header .userstuff,
 .home .header dl.stats,
@@ -219,7 +242,8 @@ dl.meta dd {
   /*
   tags have less space on the left
   */
-  margin-left: auto; }
+  margin-left: auto;
+}
 
 .chapter .secondary, .download .secondary {
   /*
@@ -228,7 +252,8 @@ dl.meta dd {
   */
   top: initial;
   right: 0;
-  margin: 10px; }
+  margin: 10px;
+}
 
 /*
 ===========
@@ -239,30 +264,37 @@ dl.meta dd {
   /*
   Moves the date of the fic from the top left
   */
-  position: initial; }
+  position: initial;
+}
 
 .blurb ul.tags.commas, .blurb h5.fandoms.heading, dd a.tag {
   /* slightly smaller tags */
-  font-size: 90%; }
+  font-size: 90%;
+}
 
 .blurb h5.fandoms.heading {
-  padding-top: 10px; }
+  padding-top: 10px;
+}
 
 /* the following lines of codes rearrange the required tags icons*/
 .blurb h4.heading {
-  margin: 0 !important; }
+  margin: 0 !important;
+}
 
 .blurb ul.required-tags {
   position: initial;
   top: initial;
-  display: flex; }
+  display: flex;
+}
 
 .blurb ul.required-tags li + li + li, .blurb ul.required-tags li + li + li + li {
   position: initial;
-  left: initial; }
+  left: initial;
+}
 
 .blurb ul.required-tags li {
-  padding-right: 6px; }
+  padding-right: 6px;
+}
 
 /*
 ===========
@@ -275,7 +307,8 @@ dl.meta dd {
   centers the icons on profile pages, collections and news posts
   */
   position: initial;
-  margin: 10px auto; }
+  margin: 10px auto;
+}
 
 /*
 ===========
@@ -291,19 +324,22 @@ div#comments_placeholder,
   */
   width: 100% !important;
   margin: auto;
-  text-align: left; }
+  text-align: left;
+}
 
 .comment .posted {
   /*
   Makes the span date go in its own line. Dunno why it's a span inside a h4 tbh.
   */
-  display: block; }
+  display: block;
+}
 
 .comment .userstuff p {
   /*
   Comments do a weird thing on the right
   */
-  padding: 0 5px; }
+  padding: 0 5px;
+}
 
 /*
 ===========
@@ -311,7 +347,8 @@ TAG PAGES
 ===========
 */
 ol.pagination {
-  max-width: 90%; }
+  max-width: 90%;
+}
 
 /*
 ===========
@@ -323,7 +360,8 @@ ol.pagination {
   makes footer module smaller and centers them
   */
   max-width: 40%;
-  margin: auto; }
+  margin: auto;
+}
 
 /* 
 ===========
@@ -336,29 +374,35 @@ Resets stuff from Ao3 default skin
 .user .primary img.icon,
 .admin .primary .icon,
 .user .primary p.icon {
-  top: auto; }
+  top: auto;
+}
 
 #header .user,
 .comment .posted,
 #header li {
-  float: initial; }
+  float: initial;
+}
 
 .javascript,
 .filters dt {
-  background-color: transparent; }
+  background-color: transparent;
+}
 
 li.showme a.actions {
   /* button show most recent bookmarks on mobile is too long*/
   white-space: normal;
-  height: initial; }
+  height: initial;
+}
 
 /*
 Fixing actual errors from default Ao3
 */
 #ui-datepicker-div {
-  top: 522px !important; }
+  top: 522px !important;
+}
 
-.assigned.module th[scope="col"],
-thead th[scope="col"] {
+.assigned.module th[scope=col],
+thead th[scope=col] {
   max-width: 18px;
-  overflow: hidden; }
+  overflow: hidden;
+}

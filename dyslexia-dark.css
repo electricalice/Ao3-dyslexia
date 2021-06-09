@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 ===========================
 General font and text stuff
@@ -16,9 +17,10 @@ h6,
   If you want to change it remember to provide fallback fonts 
   (something like 'serif' or 'sans-serif', separated by a comma)
   */
-  font-family: "Trebuchet MS", Calibri, sans-serif;
+  font-family: Verdana, "Trebuchet MS", Calibri, sans-serif;
   border-bottom: none;
-  font-weight: 700; }
+  font-weight: bolder;
+}
 
 body,
 input,
@@ -30,7 +32,7 @@ button,
 blockquote,
 .filters dt,
 .filters dd,
-.filters input[type="submit"],
+.filters input[type=submit],
 .filters .expander,
 .bookmark .user .meta,
 .datetime,
@@ -42,39 +44,24 @@ span.symbol, .splash .news .meta, select {
   Please also remember to provide fallback fonts 
   (something like 'serif' or 'sans-serif', separated by a comma)
   */
-  font-family: "Trebuchet MS", Calibri, sans-serif; }
+  font-family: Verdana, "Trebuchet MS", Calibri, sans-serif;
+}
 
-body,
-input,
-.toggled form,
-.dynamic form,
-.secondary,
-.dropdown,
-button, #main, select, blockquote, p.note, h5,
-h6,
-h4.viewed,
-#header,
-#outer.wrapper,
-#inner.wrapper,
-#modal,
-.filters .expander, #header h1, #workskin,
-.blurb .userstuff,
-.news .userstuff,
-.system .userstuff,
-.collection blockquote.userstuff, .blurb dl.stats,
+#footer li,
+.comment .userstuff, .blurb dl.stats,
 .actions li a,
 .actions li input,
-.actions li input[type="submit"],
-input[type="submit"],
+.actions li input[type=submit],
+input[type=submit],
 .actions li .current,
 .actions li label,
 #header .primary .menu a,
 #header .primary .menu .current,
-form.search input[type="text"],
+form.search input[type=text],
 dd.autocomplete li.input,
-input[type="radio"],
-input[type="checkbox"],
-input[type="file"],
+input[type=radio],
+input[type=checkbox],
+input[type=file],
 input.number,
 p input,
 p select,
@@ -85,9 +72,24 @@ select:focus,
 textarea:focus,
 textarea,
 p.type,
-.meta dd,
-#footer li,
-.comment .userstuff {
+.meta dd, #workskin,
+.blurb .userstuff,
+.news .userstuff,
+.system .userstuff,
+.collection blockquote.userstuff, #header h1,
+#header,
+#outer.wrapper,
+#inner.wrapper,
+#modal,
+.filters .expander, h5,
+h6,
+h4.viewed, p.note, blockquote, body,
+input,
+.toggled form,
+.dynamic form,
+.secondary,
+.dropdown,
+button, #main, select {
   /*
   -----------------TEXT SIZE-----------------
   This sets the default text size
@@ -95,7 +97,8 @@ p.type,
   as a measurement changes A LOT between numbers, so you might want to try
   decimals like 1.1em, 1.2em, 1.15em before going a number up (or down)
   */
-  font-size: 1.05em; }
+  font-size: 1.05em;
+}
 
 .home .header h2,
 .preface h3,
@@ -105,31 +108,32 @@ p.type,
   /*
   Removes all the underlines from titles
   */
-  border-bottom: none; }
+  border-bottom: none;
+}
 
-body,
-input,
-.toggled form,
-.dynamic form,
-.secondary,
-.dropdown,
-button, #main, select, blockquote, p.note, .filters dt,
-.filters dd,
-.filters input[type="submit"],
-.filters .expander, h3,
-#inner.wrapper,
-#modal, #workskin,
-.blurb .userstuff,
-.news .userstuff,
-.system .userstuff,
-.collection blockquote.userstuff, #chapters,
+#chapters,
 #chapters p,
 textarea,
 #footer li,
 .preface.group blockquote.userstuff,
 .preface.group blockquote.userstuff p,
 .userstuff p,
-.comment .userstuff {
+.comment .userstuff, #workskin,
+.blurb .userstuff,
+.news .userstuff,
+.system .userstuff,
+.collection blockquote.userstuff,
+#inner.wrapper,
+#modal, h3, .filters dt,
+.filters dd,
+.filters input[type=submit],
+.filters .expander, p.note, blockquote, body,
+input,
+.toggled form,
+.dynamic form,
+.secondary,
+.dropdown,
+button, #main, select {
   /*
   -----------------LINE HEIGHT-----------------
   This is the line height of the text.
@@ -138,43 +142,51 @@ textarea,
   as a measurement changes A LOT between numbers, so you might want to try
   decimals like 1.7em, 1.5em, 1.65em before going a number up (or down)
   */
-  line-height: 1.8em; }
+  line-height: 1.8em;
+}
 
 .filters dt,
 .filters dd,
-.filters input[type="submit"],
+.filters input[type=submit],
 .filters .expander {
   /* 
   a smaller text for the filters
   just remove the font-size line if you want it bigger
   */
-  font-size: 0.84em; }
+  font-size: 0.84em;
+}
 
 h4.heading {
   /*ALLTHETITLESSSS*/
-  font-size: 1.64062em;
-  font-weight: 700; }
+  font-size: 1.640625em;
+  font-weight: bolder;
+}
 
 h4 {
   /* should this be here if I reset it later? */
-  font-size: 1.3125em; }
+  font-size: 1.3125em;
+}
 
 h4.heading .datetime {
   /* slightly bigger date on blurbs*/
   padding: 5px;
-  font-size: 0.5376em; }
+  font-size: 0.5376em;
+}
 
 .preface a:hover {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 #header {
   /*
   font size  of the stuff in the header menu
   */
-  font-size: 1.05em; }
+  font-size: 1.05em;
+}
 
 .news h4.heading {
-  margin: 0; }
+  margin: 0;
+}
 
 html,
 body,
@@ -227,60 +239,46 @@ th,
 td,
 .filters dt,
 .filters dd,
-.filters input[type="submit"],
+.filters input[type=submit],
 .filters .expander {
   /* 
-    for some weird reason this is needed 
-    or fonts just won't behave
-    */
-  font-size: 100%; }
+  for some weird reason this is needed 
+  or fonts just won't behave
+  */
+  font-size: 100%;
+}
 
 h1,
 h2 {
   /*
   thicc titley titles
   */
-  font-size: 2.05078em;
-  font-weight: 600; }
+  font-size: 2.05078125em;
+  font-weight: 600;
+}
 
 h3 {
   /*
   other titley titles, not as thicc
   */
-  font-size: 1.64062em; }
+  font-size: 1.640625em;
+}
 
-body,
-#header,
-#outer.wrapper,
-#inner.wrapper,
-.secondary,
-#modal,
-.filters .expander, #workskin,
-.blurb .userstuff,
-.news .userstuff,
-.system .userstuff,
-.collection blockquote.userstuff, #chapters,
-#chapters p,
-textarea,
-#footer li,
-.preface.group blockquote.userstuff,
-.preface.group blockquote.userstuff p,
-.userstuff p,
-.comment .userstuff, .blurb dl.stats,
+.blurb dl.stats,
 .actions li a,
 .actions li input,
-.actions li input[type="submit"],
-input[type="submit"],
+.actions li input[type=submit],
+input[type=submit],
 .actions li .current,
 .actions li label,
 #header .primary .menu a,
 #header .primary .menu .current,
-form.search input[type="text"],
+form.search input[type=text],
 dd.autocomplete li.input,
-input[type="radio"],
+input[type=radio],
 select,
-input[type="checkbox"],
-input[type="file"],
+input[type=checkbox],
+input[type=file],
 input.number,
 p input,
 p select,
@@ -291,7 +289,24 @@ select:focus,
 textarea:focus,
 input,
 p.type,
-.meta dd {
+.meta dd, #chapters,
+#chapters p,
+textarea,
+#footer li,
+.preface.group blockquote.userstuff,
+.preface.group blockquote.userstuff p,
+.userstuff p,
+.comment .userstuff, #workskin,
+.blurb .userstuff,
+.news .userstuff,
+.system .userstuff,
+.collection blockquote.userstuff, body,
+#header,
+#outer.wrapper,
+#inner.wrapper,
+.secondary,
+#modal,
+.filters .expander {
   /*
   -----------------WORD SPACING-----------------
   This sets the spacing between words
@@ -300,29 +315,24 @@ p.type,
   as a measurement changes A LOT between numbers, so you might want to try
   decimals like 0.22em, 0.25em, 0.3em before going a number up (or down)
   */
-  word-spacing: 0.21em; }
+  word-spacing: 0.21em;
+}
 
-body,
-#header,
-#outer.wrapper,
-#inner.wrapper,
-.secondary,
-#modal,
-.filters .expander, .blurb dl.stats,
+.blurb dl.stats,
 .actions li a,
 .actions li input,
-.actions li input[type="submit"],
-input[type="submit"],
+.actions li input[type=submit],
+input[type=submit],
 .actions li .current,
 .actions li label,
 #header .primary .menu a,
 #header .primary .menu .current,
-form.search input[type="text"],
+form.search input[type=text],
 dd.autocomplete li.input,
-input[type="radio"],
+input[type=radio],
 select,
-input[type="checkbox"],
-input[type="file"],
+input[type=checkbox],
+input[type=file],
 input.number,
 p input,
 p select,
@@ -334,7 +344,13 @@ textarea:focus,
 input,
 textarea,
 p.type,
-.meta dd {
+.meta dd, body,
+#header,
+#outer.wrapper,
+#inner.wrapper,
+.secondary,
+#modal,
+.filters .expander {
   /*
   -----------------LETTER SPACING-----------------
   This sets the spacing between letters
@@ -343,39 +359,42 @@ p.type,
   as a measurement changes A LOT between numbers, so you might want to try
   decimals like 0.025em, 0.03em, 0.035em before going a number up (or down)
   */
-  letter-spacing: 0.02em; }
+  letter-spacing: 0.03em;
+}
 
-#workskin,
-.blurb .userstuff,
-.news .userstuff,
-.system .userstuff,
-.collection blockquote.userstuff, .blurb dl.stats, div#comments_placeholder, #chapters,
+#chapters,
 #chapters p,
 textarea,
 #footer li,
 .preface.group blockquote.userstuff,
 .preface.group blockquote.userstuff p,
 .userstuff p,
-.comment .userstuff {
+.comment .userstuff, div#comments_placeholder, .blurb dl.stats, #workskin,
+.blurb .userstuff,
+.news .userstuff,
+.system .userstuff,
+.collection blockquote.userstuff {
   /*
   -----------------TEXT ALIGNS TO LEFT-----------------
   This sets the text alignment.
 
   you can change it to justify, right or center.
   */
-  text-align: left; }
+  text-align: left;
+}
 
 #workskin {
   /*
-    Trying to override potential workskins so that the text is never justified
-    */
-  text-align: left !important; }
+  Trying to override potential workskins so that the text is never justified
+  */
+  text-align: left !important;
+}
 
-#workskin,
+div#comments_placeholder, #workskin,
 .blurb .userstuff,
 .news .userstuff,
 .system .userstuff,
-.collection blockquote.userstuff, div#comments_placeholder {
+.collection blockquote.userstuff {
   /*
   -----------------PARAGRAPH WIDTH-----------------
   This sets the width of the reading paragraphs.
@@ -389,31 +408,35 @@ textarea,
   It is reset on the mobile skin to 100%
   */
   width: 70%;
-  max-width: 45em; }
+  max-width: 45em;
+}
 
 .comment .userstuff {
   /* 
   resets the width of the paragraph comments after being reduced as a part of .userstuff
   */
-  width: 95%; }
+  width: 95%;
+}
 
 .blurb .userstuff {
   /*
   It gives a bit of space on top and at the bottom of the summary in the blurb
   */
-  padding: 20px 0; }
+  padding: 20px 0;
+}
 
 .userstuff p {
   /*
   Sets how far paragraphs should be from each other in text
-  
+
   if you need to increase or decrease, please keep in mind that "em"
   as a measurement changes A LOT between numbers, so you might want to try
   decimals like 2.5em, 2.3em, 2.8em before going a number up (or down)
 
   remember to leave " auto;" or wonky stuff will happen to the width of your paragraphs
   */
-  margin: 2em auto; }
+  margin: 2em auto;
+}
 
 /* 
 Basic fic formatting 
@@ -424,21 +447,23 @@ Basic fic formatting
 u,
 acronym[title], abbr[title] {
   /* 
-    --------UNDERLINE---------
-    To remove the colored underline from the skin just remove 
-    the following 2 lines (border-bottom etc etc and padding-bottom etc etc)
-    This will leave a nice, readable bold text 
-    */
+  --------UNDERLINE---------
+  To remove the colored underline from the skin just remove 
+  the following 2 lines (border-bottom etc etc and padding-bottom etc etc)
+  This will leave a nice, readable bold text 
+  */
   /* start deleting here -> */
   border-bottom: 2px solid #3aacff;
   padding-bottom: 4px;
   /* <- stop deleting here for the underline thingy! Leave the rest*/
   text-decoration: none;
-  font-weight: 700; }
+  font-weight: 700;
+}
 
 b,
 strong {
-  font-weight: 700; }
+  font-weight: 700;
+}
 
 /*
 --------ITALICS---------
@@ -452,29 +477,41 @@ i,
 em,
 cite {
   font-style: normal;
-  font-weight: 700; }
+  font-weight: 700;
+}
 
 /* <- Stop deleting here for the italics thingy*/
 .userstuff blockquote {
   /*
   blockquotes in fics/newsposts/FAQs have a colored border on the left
   */
-  border-inline-start: 2px solid #3aacff; }
+  border-inline-start: 2px solid #3aacff;
+}
 
 /*
 ========
 Buttons!
 ========
 */
-.actions a,
-.actions a:link,
-.action,
-.action:link,
-button,
-.current,
-.actions label, .actions input,
-input[type="submit"],
-textarea, input, #header .primary,
+#header .menu,
+#small_login,
+#header .dropdown:hover .current + .menu,
+.event .userstuff, .notice,
+.comment_notice,
+ul.notes,
+.caution,
+.error,
+.comment_error,
+.alert.flash,
+.actions a:hover,
+.actions input:hover,
+.actions a:focus,
+.actions input:focus,
+label.action:hover,
+.action:hover,
+.action:focus,
+.dynamic form,
+.ui-draggable form, #header .primary,
 .group.listbox,
 fieldset fieldset.listbox,
 #main li.blurb,
@@ -498,65 +535,69 @@ fieldset fieldset dl dl,
 dd.hideme,
 .delete a,
 span.delete,
-#header ul.primary, .notice,
-.comment_notice,
-ul.notes,
-.caution,
-.error,
-.comment_error,
-.alert.flash,
-.actions a:hover,
-.actions input:hover,
-.actions a:focus,
-.actions input:focus,
-label.action:hover,
-.action:hover,
-.action:focus,
-.dynamic form,
-.ui-draggable form, #header .menu,
-#small_login,
-#header .dropdown:hover .current + .menu,
-.event .userstuff {
+#header ul.primary, input, .actions input,
+input[type=submit],
+textarea, .actions a,
+.actions a:link,
+.action,
+.action:link,
+button,
+.current,
+.actions label {
   /*
   This resets the shadows in several places
   */
-  box-shadow: none; }
+  box-shadow: none;
+}
 
-.actions a,
+#footer,
+.autocomplete .dropdown ul li:hover,
+li.selected,
+.autocomplete a:hover, form .notice,
+form ul.notes,
+form.verbose legend,
+.verbose form legend, input, .actions input,
+input[type=submit],
+textarea, .actions a,
 .actions a:link,
 .action,
 .action:link,
 button,
 .current,
-.actions label, .actions input,
-input[type="submit"],
-textarea, input, form .notice,
-form ul.notes,
-form.verbose legend,
-.verbose form legend, #footer,
-.autocomplete .dropdown ul li:hover,
-li.selected,
-.autocomplete a:hover {
+.actions label {
   /*
   This resets the background image from default skin in several places
   */
-  background-image: none; }
+  background-image: none;
+}
 
-.actions a,
+.actions input,
+input[type=submit],
+textarea, .actions a,
 .actions a:link,
 .action,
 .action:link,
 button,
 .current,
-.actions label, .actions input,
-input[type="submit"],
-textarea {
+.actions label {
   /*
   Further 3d elements to reset in webkit browsers
   */
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+}
 
-.notice,
+form .notice,
+form ul.notes,
+form.verbose legend,
+.verbose form legend,
+.actions a,
+.actions a:link,
+.action,
+.action:link,
+input[type=submit],
+button,
+.current,
+.actions label, .notice,
 .comment_notice,
 ul.notes,
 .caution,
@@ -572,20 +613,10 @@ label.action:hover,
 .action:focus,
 .toggled form,
 .dynamic form,
-.ui-draggable form, form .notice,
-form ul.notes,
-form.verbose legend,
-.verbose form legend,
-.actions a,
-.actions a:link,
-.action,
-.action:link,
-input[type="submit"],
-button,
-.current,
-.actions label {
+.ui-draggable form {
   /* Sets the style for border buttons */
-  border: none; }
+  border: none;
+}
 
 .actions a,
 .actions a:link,
@@ -594,11 +625,13 @@ button,
 button,
 .current,
 .actions label {
-  border: none; }
+  border: none;
+}
 
 input {
   width: 96%;
-  border: 1px solid; }
+  border: 1px solid;
+}
 
 .actions a:hover,
 a:hover,
@@ -629,7 +662,8 @@ dl.index dd,
   /* resets the border color */
   border-color: initial;
   /* extra aggressive shadow removing */
-  box-shadow: none !important; }
+  box-shadow: none !important;
+}
 
 form .notice,
 form ul.notes,
@@ -639,11 +673,12 @@ form.verbose legend,
 .actions a:link,
 .action,
 .action:link,
-input[type="submit"],
+input[type=submit],
 button,
 .current,
 .actions label {
-  border-bottom: none; }
+  border-bottom: none;
+}
 
 .listbox .index,
 .dashboard .listbox .index,
@@ -651,29 +686,33 @@ button,
 form dt,
 .picture .header {
   /* 
-    some stuff needs some aggressive non-bordering 
-    */
+  some stuff needs some aggressive non-bordering 
+  */
   border: none;
   border-bottom: none;
   border-top: none;
   border-left: none;
-  border-right: none; }
+  border-right: none;
+}
 
 #header .menu,
 #small_login,
 #header .dropdown:hover .current + .menu,
 .event .userstuff {
   /* 
-    removes some more effects of default skin
-    */
-  filter: none; }
+  removes some more effects of default skin
+  */
+  filter: none;
+}
 
 .autocomplete input,
 .autocomplete .dropdown ul li {
-  min-width: 10px; }
+  min-width: 10px;
+}
 
 fieldset.work.meta .fandom.required ul.autocomplete {
-  background: transparent; }
+  background: transparent;
+}
 
 /*
 ===============================
@@ -713,10 +752,11 @@ thead,
 tfoot,
 .reading h4.viewed, li.relationships a {
   /* 
-    it removes the color background 
-    where it's set in Ao3's default skin
-    */
-  background: transparent; }
+  it removes the color background 
+  where it's set in Ao3's default skin
+  */
+  background: transparent;
+}
 
 .secondary,
 dl.meta,
@@ -745,24 +785,27 @@ form.verbose legend,
 li.blurb,
 li.comment {
   /* 
-    sets the border shapes 
-    */
+  sets the border shapes 
+  */
   border: none;
-  border-radius: 5px; }
+  border-radius: 5px;
+}
 
 th,
 thead,
 tbody tr {
   /* 
-    sets the border shapes 
-    */
-  border: none; }
+  sets the border shapes 
+  */
+  border: none;
+}
 
 li.post.group {
   /* 
   posts social distancing 
   */
-  padding: 10px; }
+  padding: 10px;
+}
 
 .splash .news li:last-of-type {
   /* 
@@ -770,7 +813,8 @@ li.post.group {
   this removes it
   */
   border-bottom: none;
-  border-radius: 5px; }
+  border-radius: 5px;
+}
 
 tr,
 th,
@@ -780,7 +824,8 @@ tfoot {
   /* 
   this is for tables
   */
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 .bookmark .user,
 .filters dl,
@@ -800,7 +845,8 @@ a,
 a:link,
 a:visited:hover {
   /* remove borders */
-  border: none; }
+  border: none;
+}
 
 #dashboard.own,
 #dashboard ul,
@@ -814,7 +860,8 @@ a:visited:hover {
   set in ao3's default skin
   */
   border-top: none;
-  border-bottom: none; }
+  border-bottom: none;
+}
 
 span.symbol {
   /* 
@@ -822,7 +869,8 @@ span.symbol {
   */
   color: initial;
   border: 1px solid;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 .blurb .header img {
   /* 
@@ -831,7 +879,8 @@ span.symbol {
   */
   vertical-align: baseline;
   padding: 3px;
-  border-radius: 3px; }
+  border-radius: 3px;
+}
 
 /* 
 I make the icons smaller, 
@@ -840,29 +889,36 @@ properly positioned
 */
 .icon {
   height: 80px;
-  width: 80px; }
+  width: 80px;
+}
 
 .tag .primary .icon,
 .tagset .primary .icon {
-  background: url(/images/imageset.png) -10px -285px; }
+  background: url(/images/imageset.png) -10px -285px;
+}
 
 .skins .primary .icon {
-  background: url(/images/imageset.png) -10px -185px; }
+  background: url(/images/imageset.png) -10px -185px;
+}
 
 .comment h4.byline {
-  padding: .25em; }
+  padding: 0.25em;
+}
 
 .abbreviated h4.byline {
-  padding-left: .25em; }
+  padding-left: 0.25em;
+}
 
 .comment div.icon {
   margin-left: 10px;
   margin-right: 10px;
-  margin-top: 10px; }
+  margin-top: 10px;
+}
 
 .comment .icon .visitor {
   background: url(/images/imageset.png) no-repeat -10px -85px;
-  display: block; }
+  display: block;
+}
 
 /*end of stuff regarding the icon resizing*/
 .comment .posted {
@@ -870,33 +926,43 @@ properly positioned
   positions the date of a comment 
   */
   display: block;
-  float: none; }
+  float: none;
+}
 
 .group.listbox {
-  border: 1px solid transparent; }
+  border: 1px solid transparent;
+}
 
 .fandom .group.listbox {
-  width: 100%; }
+  width: 100%;
+}
 
 form.inbox {
-  overflow-x: initial; }
+  overflow-x: initial;
+}
+
+#dashboard {
+  /*this deals with the border on ipad*/
+  border-color: transparent;
+}
 
 /*
 ======================
   General settings
 ======================
 */
-#workskin,
+div#comments_placeholder, #main.system h2.heading,
+#main.system h3.heading,
+.userstuff img, #workskin,
 .blurb .userstuff,
 .news .userstuff,
 .system .userstuff,
-.collection blockquote.userstuff, #main.system h2.heading,
-#main.system h3.heading,
-.userstuff img, div#comments_placeholder {
+.collection blockquote.userstuff {
   /*
   This centers elements that need to be centered
   */
-  margin: auto; }
+  margin: auto;
+}
 
 /*
 ==========
@@ -909,7 +975,8 @@ form.inbox {
   Resets line height for the header
   so it all aligns properly
   */
-  line-height: normal; }
+  line-height: normal;
+}
 
 #header .logo,
 #header .heading sup,
@@ -920,26 +987,30 @@ form.inbox {
   and the 'beta' bit too.
   so that everything is a little more clear.
   */
-  display: none; }
+  display: none;
+}
 
 #header .heading {
   /* 
   gives a decent space on the left to Ao3's logo in the header
   */
-  margin-left: 2em; }
+  margin-left: 2em;
+}
 
 #header h1 {
   /* 
   Ao3 Logo is boldy 
   */
-  font-weight: 700; }
+  font-weight: 700;
+}
 
 #login,
 #greeting {
   /* 
   gives a decent space on top to the user's menu in the header
   */
-  margin-top: 10px; }
+  margin-top: 10px;
+}
 
 #header .menu,
 #small_login,
@@ -948,7 +1019,8 @@ form.inbox {
   Makes the dropdown menu bigger, 
   since the font used in this theme is huge
   */
-  width: 25em; }
+  width: 25em;
+}
 
 /*
 =============
@@ -965,13 +1037,15 @@ form.inbox {
   /* 
   centers a few kind of titles (collections, news posts, FAQs...)
   */
-  text-align: center; }
+  text-align: center;
+}
 
 .userstuff img {
   /*
   Regarding icons in news posts
   */
-  max-width: 90%; }
+  max-width: 90%;
+}
 
 #main.system h2.heading,
 #main.system h3.heading,
@@ -979,14 +1053,16 @@ form.inbox {
   /*
   needs this as blocks or will never center
   */
-  display: block; }
+  display: block;
+}
 
 #header h2.collections,
 #header h2 {
   /* 
   resetting ao3 default skin's border on top of collection's header
   */
-  border-top: none; }
+  border-top: none;
+}
 
 .home .header .userstuff,
 .home .header dl.stats,
@@ -994,7 +1070,8 @@ form.inbox {
   /*
   Collection pages have a weird margin left??? why??
   */
-  margin-left: initial; }
+  margin-left: initial;
+}
 
 /*
 ========
@@ -1013,23 +1090,28 @@ a.tag:link {
   padding: 4px 7px;
   line-height: 2.3em;
   border: 2px solid #3aacff;
-  border-radius: 5px; }
+  border-radius: 5px;
+}
 
 .commas li:after {
-  content: ""; }
+  content: "";
+}
 
 .favorite a.tag {
-  border: none; }
+  border: none;
+}
 
 /* <- stop deleting here for the tag thingy */
 .blurb dl.stats {
   /*
   puts stats on the left of the blurb
   */
-  float: initial; }
+  float: initial;
+}
 
 .meta ul li {
-  padding-left: 0; }
+  padding-left: 0;
+}
 
 .blurb ul li,
 .blurb dd ul li,
@@ -1039,7 +1121,8 @@ a.tag:link {
   it's a readibility thing related to the border for the tags
   */
   display: inline-block;
-  margin: 0; }
+  margin: 0;
+}
 
 /*
 ============
@@ -1049,29 +1132,33 @@ a.tag:link {
 .filters .expander,
 .filters .expanded .expander {
   /* 
-    sets the spacing and font of the filter expander text 
-    */
+  sets the spacing and font of the filter expander text 
+  */
   padding: 0px;
   font-size: 1.05em;
-  background: none; }
+  background: none;
+}
 
 .filters .expander::before {
   /* 
-    This is the arrow for the filters 
-    */
-  content: "\2799"; }
+  This is the arrow for the filters 
+  */
+  content: "➙";
+}
 
 .filters .expanded .expander::before {
   /* 
-    This is the arrow for the filters when expanded 
-    */
-  content: "\2798"; }
+  This is the arrow for the filters when expanded 
+  */
+  content: "➘";
+}
 
 .filters input:checked + .indicator + span {
   /*
-    resets the weight from the Ao3 default skin
-    */
-  font-weight: inherit; }
+  resets the weight from the Ao3 default skin
+  */
+  font-weight: inherit;
+}
 
 /*
 =================
@@ -1083,88 +1170,96 @@ This is the very complicated code for the checkboxes and the radio
 yes I hate it too.
 
 */
-.filters [type="radio"] + .indicator:before,
-.filters [type="radio"]:checked + .indicator:before,
-.filters [type="checkbox"] + .indicator:before,
-.filters .exclude [type="checkbox"] + .indicator:before,
-.filters [type="checkbox"]:checked + .indicator:before,
-.filters .exclude [type="checkbox"]:checked + .indicator:before,
-input[type="checkbox"],
-input[type="radio"],
-input[type="checkbox"]:checked,
-input[type="radio"]:checked,
-.actions input[type="checkbox"]:checked,
-label.action input[type="checkbox"]:checked,
-input[type="checkbox"]:hover,
-.actions input[type="checkbox"]:hover {
+.filters [type=radio] + .indicator:before,
+.filters [type=radio]:checked + .indicator:before,
+.filters [type=checkbox] + .indicator:before,
+.filters .exclude [type=checkbox] + .indicator:before,
+.filters [type=checkbox]:checked + .indicator:before,
+.filters .exclude [type=checkbox]:checked + .indicator:before,
+input[type=checkbox],
+input[type=radio],
+input[type=checkbox]:checked,
+input[type=radio]:checked,
+.actions input[type=checkbox]:checked,
+label.action input[type=checkbox]:checked,
+input[type=checkbox]:hover,
+.actions input[type=checkbox]:hover {
   /*
   sets the size of the checkboxes and radio boxes around the website
   including filters
   */
   width: 0.9em;
-  height: 0.9em; }
+  height: 0.9em;
+}
 
-input[type="radio"] {
-  border-radius: 50%; }
+input[type=radio] {
+  border-radius: 50%;
+}
 
-.filters [type="radio"] + .indicator:before {
+.filters [type=radio] + .indicator:before {
   content: "";
-  vertical-align: -.125em;
+  vertical-align: -0.125em;
   background: none;
   background-color: #43566b;
-  border: none; }
+  border: none;
+}
 
-.filters [type="radio"]:checked + .indicator:before {
+.filters [type=radio]:checked + .indicator:before {
   content: "";
-  vertical-align: -.125em;
+  vertical-align: -0.125em;
   background: none;
   background-color: #3aacff;
-  border: none; }
+  border: none;
+}
 
-.filters [type="checkbox"] + .indicator:before,
-.filters .exclude [type="checkbox"] + .indicator:before {
+.filters [type=checkbox] + .indicator:before,
+.filters .exclude [type=checkbox] + .indicator:before {
   content: "";
   padding: 0px;
   border-radius: 0px;
-  vertical-align: -.125em;
+  vertical-align: -0.125em;
   background: none;
   background-color: #43566b;
-  border: none; }
+  border: none;
+}
 
-.filters [type="checkbox"]:checked + .indicator:before,
-.filters .exclude [type="checkbox"]:checked + .indicator:before {
+.filters [type=checkbox]:checked + .indicator:before,
+.filters .exclude [type=checkbox]:checked + .indicator:before {
   content: "";
   padding: 0px;
   border-radius: 0px;
-  vertical-align: -.125em;
+  vertical-align: -0.125em;
   background: none;
   background-color: #3aacff;
-  border: none; }
+  border: none;
+}
 
-.filters .exclude [type="checkbox"]:checked + .indicator:before {
+.filters .exclude [type=checkbox]:checked + .indicator:before {
   /* 
-    the exclude filters have a different color when checked
-    */
-  background-color: #f64e5b; }
+  the exclude filters have a different color when checked
+  */
+  background-color: #f64e5b;
+}
 
-input[type="checkbox"],
-input[type="radio"],
-.actions input[type="checkbox"],
-label.action input[type="checkbox"] {
+input[type=checkbox],
+input[type=radio],
+.actions input[type=checkbox],
+label.action input[type=checkbox] {
   background-color: #43566b;
-  border: none #a8b5c4; }
+  border: none #a8b5c4;
+}
 
-input[type="checkbox"],
-input[type="radio"],
-input[type="checkbox"]:checked,
-input[type="radio"]:checked,
-.actions input[type="checkbox"]:checked,
-label.action input[type="checkbox"]:checked,
-input[type="checkbox"]:hover,
-.actions input[type="checkbox"]:hover {
+input[type=checkbox],
+input[type=radio],
+input[type=checkbox]:checked,
+input[type=radio]:checked,
+.actions input[type=checkbox]:checked,
+label.action input[type=checkbox]:checked,
+input[type=checkbox]:hover,
+.actions input[type=checkbox]:hover {
   /* 
-    removes browser-specific appearance of checkboxes and radio 
-    */
+  removes browser-specific appearance of checkboxes and radio 
+  */
   display: inline-block;
   appearance: none;
   -webkit-appearance: none;
@@ -1173,22 +1268,24 @@ input[type="checkbox"]:hover,
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; }
+  user-select: none;
+}
 
-input[type="checkbox"]:checked,
-input[type="radio"]:checked,
-.actions input[type="checkbox"]:checked,
-label.action input[type="checkbox"]:checked,
-input[type="checkbox"]:hover,
-.actions input[type="checkbox"]:hover {
+input[type=checkbox]:checked,
+input[type=radio]:checked,
+.actions input[type=checkbox]:checked,
+label.action input[type=checkbox]:checked,
+input[type=checkbox]:hover,
+.actions input[type=checkbox]:hover {
   background-color: #3aacff;
-  border: none; }
+  border: none;
+}
 
-form.search input[type="text"],
+form.search input[type=text],
 dd.autocomplete li.input,
-input[type="radio"],
+input[type=radio],
 select,
-input[type="file"],
+input[type=file],
 input.number,
 p select,
 .heading select,
@@ -1204,46 +1301,53 @@ textarea {
   border-top-color: #43566b;
   border-color: #43566b;
   background-color: #43566b;
-  border-radius: 5px; }
+  border-radius: 5px;
+}
 
-p input, input[type="checkbox"] {
+p input, input[type=checkbox] {
   border-top-color: #43566b;
   border-color: #43566b;
-  background-color: #43566b; }
+  background-color: #43566b;
+}
 
-.filters [type="radio"] + .indicator:before,
-.filters [type="checkbox"] + .indicator:before,
-.filters .exclude [type="checkbox"] + .indicator:before {
+.filters [type=radio] + .indicator:before,
+.filters [type=checkbox] + .indicator:before,
+.filters .exclude [type=checkbox] + .indicator:before {
   /* 
   filter related checkboxes and radio
   */
-  background-color: #43566b; }
+  background-color: #43566b;
+}
 
-.filters .exclude [type="checkbox"]:checked + .indicator:before {
+.filters .exclude [type=checkbox]:checked + .indicator:before {
   /*
   Exclude filters when checked have the same color of alerts
   */
-  background-color: #f64e5b; }
+  background-color: #f64e5b;
+}
 
 .javascript {
   /*
   Sets the background color in the filters on mobile
   */
-  background-color: #334151 !important; }
+  background-color: #334151 !important;
+}
 
-.announcement input[type="submit"],
+.announcement input[type=submit],
 .announcement .action {
   /* 
   no idea what this is but it does something I guess 
   it was probabbly related to some announcement bar it appeared at some point
   */
-  border: 1px solid #a8b5c4; }
+  border: 1px solid #a8b5c4;
+}
 
 .ui-draggable form {
   /*
   This sets a shadow in the comment reply form that is floaty in some pages
   */
-  box-shadow: 0 0 3px #43566b; }
+  box-shadow: 0 0 3px #43566b;
+}
 
 .filters .expander,
 .filters .expanded .expander {
@@ -1252,60 +1356,20 @@ p input, input[type="checkbox"] {
   */
   border: none #3aacff;
   border-radius: 5px;
-  margin-top: 10px; }
+  margin-top: 10px;
+}
 
 /*
 ===========
   Colors
 ===========
   */
-body,
-#header,
-#outer.wrapper,
-#inner.wrapper,
-.secondary,
-#modal,
-.filters .expander, a.tag,
-a.tag:visited,
-a.tag:link, .actions a,
-.actions a:link,
-.actions a:visited,
-.action,
-.action:link,
-.actions input,
-input[type="submit"],
-button,
-.current,
-.actions label,
-.listbox > .heading,
-.listbox .heading a:visited,
-form dd.required,
-.filters dt,
-.filters dd,
-.filters input[type="submit"],
-#header .primary .menu a,
-#header .primary .menu .current, #outer .current, .userstuff h2, label, .autocomplete li.added, .post .meta dd ul li.added,
-.dropdown,
-.splash .favorite li:nth-of-type(odd) a, .statistics .index li:nth-of-type(even),
-input#site_search:focus,
-#header #search input:focus,
-.autocomplete div.dropdown ul,
-.toggled form,
-.dynamic form, form.search input[type="text"],
-dd.autocomplete li.input,
-input[type="radio"],
-select,
-input[type="file"],
-input.number,
-p select,
-.heading select,
-li select,
-input:focus,
-select:focus,
-textarea:focus,
-input,
-textarea, p input, input[type="checkbox"], .announcement input[type="submit"],
-.announcement .action, .notice,
+#header a,
+#header a:visited,
+#header .current,
+#header .primary .open a,
+#header .primary .dropdown:hover a,
+#header .primary .dropdown a:focus, .notice,
 .comment_notice,
 ul.notes,
 .caution,
@@ -1315,18 +1379,60 @@ ul.notes,
 .required .autocomplete,
 .autocomplete .notice,
 #header h2.collections,
-#header h2, #header a,
-#header a:visited,
-#header .current,
-#header .primary .open a,
-#header .primary .dropdown:hover a,
-#header .primary .dropdown a:focus {
+#header h2, body,
+#header,
+#outer.wrapper,
+#inner.wrapper,
+.secondary,
+#modal,
+.filters .expander, .userstuff h1, .userstuff h2, .userstuff h3, .userstuff h4, .userstuff h5, .userstuff h6, a.tag,
+a.tag:visited,
+a.tag:link, .actions a,
+.actions a:link,
+.actions a:visited,
+.action,
+.action:link,
+.actions input,
+input[type=submit],
+button,
+.current,
+.actions label,
+.listbox > .heading,
+.listbox .heading a:visited,
+form dd.required,
+.filters dt,
+.filters dd,
+.filters input[type=submit],
+#header .primary .menu a,
+#header .primary .menu .current, #outer .current, label, .autocomplete li.added, .post .meta dd ul li.added,
+.dropdown,
+.splash .favorite li:nth-of-type(odd) a, .statistics .index li:nth-of-type(even),
+input#site_search:focus,
+#header #search input:focus,
+.autocomplete div.dropdown ul,
+.toggled form,
+.dynamic form, form.search input[type=text],
+dd.autocomplete li.input,
+input[type=radio],
+select,
+input[type=file],
+input.number,
+p select,
+.heading select,
+li select,
+input:focus,
+select:focus,
+textarea:focus,
+input,
+textarea, p input, input[type=checkbox], .announcement input[type=submit],
+.announcement .action {
   /*
   -----------------TEXT COLOR-----------------
   This is the main text color for all the body of text
   Use a hex color picker to change this!
   */
-  color: #edf1f9; }
+  color: #edf1f9;
+}
 
 body,
 #header,
@@ -1334,7 +1440,7 @@ body,
 #inner.wrapper,
 .secondary,
 #modal,
-.filters .expander, .announcement input[type="submit"],
+.filters .expander, .announcement input[type=submit],
 .announcement .action {
   /*
   -----------------BACKGROUND COLOR-----------------
@@ -1342,7 +1448,8 @@ body,
   Use a hex color picker to change this!
   */
   background-color: #1c232d;
-  background: #1c232d; }
+  background: #1c232d;
+}
 
 .actions a,
 .actions a:link,
@@ -1350,7 +1457,7 @@ body,
 .action,
 .action:link,
 .actions input,
-input[type="submit"],
+input[type=submit],
 button,
 .current,
 .actions label,
@@ -1377,7 +1484,8 @@ tr:hover,
   Use a hex color picker to change this!
   */
   background-color: #2f4258;
-  background: #2f4258; }
+  background: #2f4258;
+}
 
 a,
 a:link,
@@ -1407,7 +1515,8 @@ li::marker,
   is colored differently from the body of text
   Use a hex color picker to change this!
   */
-  color: #3aacff; }
+  color: #3aacff;
+}
 
 #footer,
 a:hover,
@@ -1425,7 +1534,7 @@ label.action:hover,
 .splash .favorite li:nth-of-type(odd) a:focus,
 .blurb h4 a:hover,
 a:visited:hover,
-input[type="submit"]:hover,
+input[type=submit]:hover,
 #header .dropdown .menu a:hover,
 #header .dropdown .menu a:focus,
 .event .userstuff,
@@ -1434,19 +1543,21 @@ input[type="submit"]:hover,
 .event .userstuff a:visited,
 .listbox .index a:hover,
 .autocomplete .dropdown ul li:hover,
-li.selected, .filters [type="radio"]:checked + .indicator:before,
-.filters [type="checkbox"]:checked + .indicator:before,
-.filters .exclude [type="checkbox"]:checked + .indicator:before, .filters .expander,
+li.selected, .filters [type=radio]:checked + .indicator:before,
+.filters [type=checkbox]:checked + .indicator:before,
+.filters .exclude [type=checkbox]:checked + .indicator:before, .filters .expander,
 .filters .expanded .expander {
   /*
   This sets the accent color to the backgrounds.
   like buttons, footer and stuff like that.
   Use a hex color picker to change this!
   */
-  background-color: #3aacff; }
+  background-color: #3aacff;
+}
 
 #header .primary {
-  background: #212d3b; }
+  background: #212d3b;
+}
 
 #footer,
 a:hover,
@@ -1464,7 +1575,7 @@ label.action:hover,
 .splash .favorite li:nth-of-type(odd) a:focus,
 .blurb h4 a:hover,
 a:visited:hover,
-input[type="submit"]:hover,
+input[type=submit]:hover,
 #header .dropdown .menu a:hover,
 #header .dropdown .menu a:focus,
 .event .userstuff,
@@ -1482,13 +1593,15 @@ li.selected, li.dropdown, .notice a,
   be read on the accent color background
   Use a hex color picker to change this!
   */
-  color: #1c232d; }
+  color: #1c232d;
+}
 
 ::-moz-selection,
 ::selection,
 ::-webkit-selection {
   background-color: #3aacff;
-  color: #1c232d; }
+  color: #1c232d;
+}
 
 .notice,
 .comment_notice,
@@ -1504,7 +1617,8 @@ ul.notes,
   /* 
   This is the background color of the notices, alert, comment errors and stuff like that 
   */
-  background-color: #bbe1fe; }
+  background-color: #bbe1fe;
+}
 
 .required,
 .error,
@@ -1513,10 +1627,12 @@ ul.notes,
   /* 
   This sets the warning text color for alerts, error, and stuff like that
   */
-  color: #f64e5b; }
+  color: #f64e5b;
+}
 
 a.modal.help:hover {
-  background-color: transparent; }
+  background-color: transparent;
+}
 
 fieldset,
 form dl,
@@ -1554,23 +1670,27 @@ li.comment,
   this sets the borders color
   Use a hex color picker to change this!
   */
-  border-color: #a8b5c4; }
+  border-color: #a8b5c4;
+}
 
 /*
 These next 3 are related to exchanges.
 They modify the colors in the sign-up list
 */
 span.offered.requested {
-  color: #faad14; }
+  color: #faad14;
+}
 
 span.offered,
 .replied,
 .nominations .approved {
-  color: #00ad97; }
+  color: #00ad97;
+}
 
 span.requested,
 .nominations .rejected {
-  color: #f64e5b; }
+  color: #f64e5b;
+}
 
 fieldset,
 li.blurb,
@@ -1578,10 +1698,12 @@ li.blurb,
 li.comment,
 #main li.blurb, div#user-fandoms, .draft, li.post.group, .fandom .group.listbox {
   background-color: #212d3b;
-  border-radius: 5px; }
+  border-radius: 5px;
+}
 
 form.verbose legend {
-  background-color: #43566b; }
+  background-color: #43566b;
+}
 
 .notice,
 .comment_notice,
@@ -1594,11 +1716,14 @@ ul.notes,
 .autocomplete .notice,
 #header h2.collections,
 #header h2 {
-  color: #1c232d; }
+  color: #1c232d;
+}
 
 .thread .even {
   /*comments alternate*/
-  background-color: #43566b; }
+  background-color: #43566b;
+}
 
 .blurb .header img {
-  background-color: #edf1f9; }
+  background-color: #edf1f9;
+}
