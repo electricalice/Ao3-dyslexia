@@ -1109,6 +1109,11 @@ a.tag:link {
   padding-left: 0;
 }
 
+#header .primary a {
+  /*colors of the primary menu links*/
+  color: #f7f7f9;
+}
+
 .blurb ul li,
 .blurb dd ul li,
 .meta dd ul li {
@@ -1691,4 +1696,9 @@ span.requested,
 .thread .even {
   /*comments alternate*/
   background-color: #e4e4eb;
+}
+
+#footer .heading, #footer a, #footer {
+  /*changes the color of the footer text. Necessary for squidgeworld*/
+  color: #f7f7f9;
 }
