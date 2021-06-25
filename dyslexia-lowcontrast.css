@@ -550,7 +550,7 @@ button,
   box-shadow: none;
 }
 
-#footer,
+.announcement blockquote.userstuff, #footer,
 .autocomplete .dropdown ul li:hover,
 li.selected,
 .autocomplete a:hover, form .notice,
@@ -872,7 +872,7 @@ span.symbol {
   vertical-align: middle;
 }
 
-.blurb .header img {
+.blurb .header img, #workskin h2.heading img {
   /* 
   Aligns vertically the little lock next to the title in the blurb
   it also gives a bit of a space enough to have a background if needed in dark mode, later
@@ -1127,6 +1127,15 @@ a.tag:link {
   */
   display: inline-block;
   margin: 0;
+}
+
+.notice a,
+.notice a:link,
+.notice a:visited,
+.announcement a,
+.announcement a:link,
+.announcement a:visited {
+  text-decoration: underline;
 }
 
 /*
@@ -1591,7 +1600,10 @@ input[type=submit]:hover,
 .autocomplete .dropdown ul li:hover,
 li.selected, li.dropdown, .notice a,
 .notice a:link,
-.notice a:visited, .filters .expander,
+.notice a:visited,
+.announcement a,
+.announcement a:link,
+.announcement a:visited, .filters .expander,
 .filters .expanded .expander {
   /*
   Related to the previous classes, this colors the text in a way that it can 
@@ -1710,7 +1722,7 @@ form.verbose legend {
   background-color: #c8c6c6;
 }
 
-.notice,
+.notice, .announcement,
 .comment_notice,
 ul.notes,
 .caution,

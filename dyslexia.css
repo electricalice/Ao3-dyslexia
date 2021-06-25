@@ -1125,6 +1125,15 @@ a.tag:link {
   margin: 0;
 }
 
+.notice a,
+.notice a:link,
+.notice a:visited,
+.announcement a,
+.announcement a:link,
+.announcement a:visited {
+  text-decoration: underline;
+}
+
 /*
 ============
   Filters!
