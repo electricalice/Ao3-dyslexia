@@ -946,6 +946,27 @@ form.inbox {
   border-color: transparent;
 }
 
+.LV_invalid {
+  background: #f64e5b;
+  border: none #f64e5b;
+  color: #1c232d;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.LV_invalid:before {
+  border-color: #f64e5b transparent;
+  border-width: 0 0.643em 0.643em;
+}
+
+.LV_invalid_field,
+input.LV_invalid_field:hover,
+input.LV_invalid_field:active,
+textarea.LV_invalid_field:hover,
+textarea.LV_invalid_field:active {
+  border-color: #f64e5b;
+}
+
 /*
 ======================
   General settings

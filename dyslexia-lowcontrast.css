@@ -946,6 +946,27 @@ form.inbox {
   border-color: transparent;
 }
 
+.LV_invalid {
+  background: #ad353e;
+  border: none #ad353e;
+  color: #b2afaf;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.LV_invalid:before {
+  border-color: #ad353e transparent;
+  border-width: 0 0.643em 0.643em;
+}
+
+.LV_invalid_field,
+input.LV_invalid_field:hover,
+input.LV_invalid_field:active,
+textarea.LV_invalid_field:hover,
+textarea.LV_invalid_field:active {
+  border-color: #ad353e;
+}
+
 /*
 ======================
   General settings
@@ -1253,7 +1274,7 @@ input[type=radio] {
   /* 
   the exclude filters have a different color when checked
   */
-  background-color: #f28089;
+  background-color: #ad353e;
 }
 
 input[type=checkbox],
@@ -1338,7 +1359,7 @@ p input, input[type=checkbox] {
   /*
   Exclude filters when checked have the same color of alerts
   */
-  background-color: #f28089;
+  background-color: #ad353e;
 }
 
 .javascript {
@@ -1645,7 +1666,7 @@ ul.notes,
   /* 
   This sets the warning text color for alerts, error, and stuff like that
   */
-  color: #f28089;
+  color: #ad353e;
 }
 
 a.modal.help:hover {
