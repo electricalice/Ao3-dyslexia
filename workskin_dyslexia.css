@@ -1,0 +1,63 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#workskin,
+#workskin.userstuff,
+.heading,
+#workskin.title,
+.preface h3,
+.userstuff {
+  font-family: "Trebuchet MS", Calibri, sans-serif;
+  letter-spacing: 0.02em;
+  word-spacing: 0.21em;
+  line-height: 1.8em;
+}
+
+p {
+  line-height: 1.8em;
+}
+
+.userstuff {
+  font-size: 1.1em;
+  padding-bottom: 2em;
+  max-width: 45em;
+  margin: auto;
+}
+
+h3 {
+  border-bottom: none;
+}
+
+u {
+  border-bottom: 2px solid #4675C0;
+  padding-bottom: 4px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+i,
+em,
+cite {
+  font-style: normal;
+  font-weight: 700;
+}
+
+li::marker, a, a:link, a:visited {
+  color: #4675C0;
+}
+
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+.userstuff blockquote {
+  border-inline-start: 2px solid #4675C0;
+}

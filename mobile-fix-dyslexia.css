@@ -388,7 +388,7 @@ Resets stuff from Ao3 default skin
   background-color: transparent;
 }
 
-li.showme a.actions {
+li.showme a.actions, dl.stats dd {
   /* button show most recent bookmarks on mobile is too long*/
   white-space: normal;
   height: initial;
