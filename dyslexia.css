@@ -81,7 +81,7 @@ p.type,
 #outer.wrapper,
 #inner.wrapper,
 #modal,
-.filters .expander, h5,
+.filters .expander, .qtip-content, h5,
 h6,
 h4.viewed, p.note, blockquote, body,
 input,
@@ -946,12 +946,18 @@ form.inbox {
   border-color: transparent;
 }
 
-.LV_invalid {
+.LV_invalid, .qtip-content {
+  /*tooltips in tagsets and error messages in forms*/
   background: #A62637;
   border: 2px solid #A62637;
   color: #f7f7f9;
   border-radius: 5px;
   box-shadow: none;
+}
+
+.qtip-content {
+  /*tooltips in tagsets*/
+  border-radius: 0 5px 5px;
 }
 
 .LV_invalid:before {
@@ -1426,7 +1432,7 @@ ul.notes,
 #inner.wrapper,
 .secondary,
 #modal,
-.filters .expander, .userstuff h1, .userstuff h2, .userstuff h3, .userstuff h4, .userstuff h5, .userstuff h6, a.tag,
+.filters .expander, .userstuff h1, .userstuff h2, .userstuff h3, .userstuff h4, .userstuff h5, .userstuff h6, span.unreviewed.symbol, ul.notes li::marker, a.tag,
 a.tag:visited,
 a.tag:link, .actions a,
 .actions a:link,
