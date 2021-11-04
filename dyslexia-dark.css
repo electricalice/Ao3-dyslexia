@@ -117,7 +117,6 @@ textarea,
 #footer li,
 .preface.group blockquote.userstuff,
 .preface.group blockquote.userstuff p,
-.userstuff p,
 .comment .userstuff, #workskin,
 .blurb .userstuff,
 .news .userstuff,
@@ -127,7 +126,7 @@ textarea,
 #modal, h3, .filters dt,
 .filters dd,
 .filters input[type=submit],
-.filters .expander, .userstuff h2, .userstuff h1, .userstuff h3, .userstuff h4, p.note, blockquote, body,
+.filters .expander, .userstuff li, .userstuff ul, .userstuff p, .userstuff h2, .userstuff h1, .userstuff h3, .userstuff h4, p.note, blockquote, body,
 input,
 .toggled form,
 .dynamic form,
@@ -186,6 +185,12 @@ h4.heading .datetime {
 
 .news h4.heading {
   margin: 0;
+}
+
+code, pre {
+  font-family: "Courier New", Courier, Monospace;
+  font-size: 1.05em;
+  padding: 1em 0.5em;
 }
 
 html,
@@ -831,6 +836,10 @@ tfoot {
   vertical-align: middle;
 }
 
+col.name {
+  background: transparent;
+}
+
 .bookmark .user,
 .filters dl,
 .filters dt,
@@ -847,7 +856,7 @@ div.comment,
 .comment div.icon,
 a,
 a:link,
-a:visited:hover {
+a:visited:hover, .alert .userstuff {
   /* remove borders */
   border: none;
 }
@@ -962,6 +971,7 @@ form.inbox {
   color: #1c232d;
   border-radius: 5px;
   box-shadow: none;
+  z-index: 1;
 }
 
 .qtip-content {
@@ -1435,7 +1445,7 @@ ul.notes,
 .required .autocomplete,
 .autocomplete .notice,
 #header h2.collections,
-#header h2, body,
+#header h2, .alert .userstuff, body,
 #header,
 #outer.wrapper,
 #inner.wrapper,
@@ -1672,17 +1682,18 @@ ul.notes,
 .required .autocomplete,
 .autocomplete .notice,
 #header h2.collections,
-#header h2 {
+#header h2, .alert .userstuff {
   /* 
   This is the background color of the notices, alert, comment errors and stuff like that 
   */
   background-color: #bbe1fe;
+  background: #bbe1fe;
 }
 
 .required,
 .error,
 .alert.flash,
-.nominations .rejected {
+.nominations .rejected, .alert .userstuff {
   /* 
   This sets the warning text color for alerts, error, and stuff like that
   */
