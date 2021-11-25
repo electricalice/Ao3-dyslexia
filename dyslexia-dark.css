@@ -1139,7 +1139,7 @@ a.tag,
 a.tag:visited,
 a.tag:link {
   display: inline-block;
-  padding: 4px 7px;
+  padding: 3px 7px;
   margin: 4px 0px;
   border: 2px solid #3aacff;
   border-radius: 5px;
@@ -1147,6 +1147,11 @@ a.tag:link {
 
 .commas li:after {
   content: "";
+}
+
+h5.fandoms.heading {
+  /*this removes the commas in the fandom tags (yeah, it's weird)*/
+  color: transparent;
 }
 
 .favorite a.tag {
@@ -1340,10 +1345,16 @@ input[type=checkbox]:hover,
 input[type=checkbox]:checked,
 input[type=radio]:checked,
 .actions input[type=checkbox]:checked,
-label.action input[type=checkbox]:checked,
-input[type=checkbox]:hover,
-.actions input[type=checkbox]:hover {
+label.action input[type=checkbox]:checked {
   background-color: #3aacff;
+  border: none;
+}
+
+input[type=checkbox]:hover,
+.actions input[type=checkbox]:hover, .filters [type=checkbox]:hover + .indicator:before,
+.filters [type=radio]:hover + .indicator:before,
+.filters .exclude [type=checkbox]:hover + .indicator:before {
+  background-color: #3e8ac4;
   border: none;
 }
 
