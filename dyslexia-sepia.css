@@ -458,7 +458,7 @@ acronym[title], abbr[title] {
   This will leave a nice, readable bold text 
   */
   /* start deleting here -> */
-  border-bottom: 2px solid #928b70;
+  border-bottom: 2px solid #9e775b;
   padding-bottom: 4px;
   /* <- stop deleting here for the underline thingy! Leave the rest*/
   text-decoration: none;
@@ -490,7 +490,7 @@ cite {
   /*
   blockquotes in fics/newsposts/FAQs have a colored border on the left
   */
-  border-inline-start: 2px solid #928b70;
+  border-inline-start: 2px solid #9e775b;
 }
 
 /*
@@ -959,7 +959,7 @@ form.inbox {
   /*tooltips in tagsets and error messages in forms*/
   background: #86300f;
   border: 2px solid #86300f;
-  color: #FBF6E5;
+  color: #F4ECD8;
   border-radius: 5px;
   box-shadow: none;
   z-index: 1;
@@ -1132,7 +1132,7 @@ a.tag:link {
   display: inline-block;
   padding: 3px 7px;
   margin: 4px 0px;
-  border: 2px solid #928b70;
+  border: 2px solid #9e775b;
   border-radius: 5px;
 }
 
@@ -1163,7 +1163,7 @@ h5.fandoms.heading {
 
 #header .primary a {
   /*colors of the primary menu links*/
-  color: #FBF6E5;
+  color: #F4ECD8;
 }
 
 .blurb ul li,
@@ -1262,7 +1262,7 @@ input[type=radio] {
   content: "";
   vertical-align: -0.125em;
   background: none;
-  background-color: #F7EEDE;
+  background-color: #fff9f0;
   border: none;
 }
 
@@ -1270,7 +1270,7 @@ input[type=radio] {
   content: "";
   vertical-align: -0.125em;
   background: none;
-  background-color: #928b70;
+  background-color: #9e775b;
   border: none;
 }
 
@@ -1281,7 +1281,7 @@ input[type=radio] {
   border-radius: 0px;
   vertical-align: -0.125em;
   background: none;
-  background-color: #F7EEDE;
+  background-color: #fff9f0;
   border: none;
 }
 
@@ -1292,7 +1292,7 @@ input[type=radio] {
   border-radius: 0px;
   vertical-align: -0.125em;
   background: none;
-  background-color: #928b70;
+  background-color: #9e775b;
   border: none;
 }
 
@@ -1307,7 +1307,7 @@ input[type=checkbox],
 input[type=radio],
 .actions input[type=checkbox],
 label.action input[type=checkbox] {
-  background-color: #F7EEDE;
+  background-color: #fff9f0;
   border: 2px solid #DBD5C3;
 }
 
@@ -1337,7 +1337,7 @@ input[type=checkbox]:checked,
 input[type=radio]:checked,
 .actions input[type=checkbox]:checked,
 label.action input[type=checkbox]:checked {
-  background-color: #928b70;
+  background-color: #9e775b;
   border: none;
 }
 
@@ -1345,7 +1345,7 @@ input[type=checkbox]:hover,
 .actions input[type=checkbox]:hover, .filters [type=checkbox]:hover + .indicator:before,
 .filters [type=radio]:hover + .indicator:before,
 .filters .exclude [type=checkbox]:hover + .indicator:before {
-  background-color: #bab39c;
+  background-color: #c5ab97;
   border: none;
 }
 
@@ -1366,16 +1366,16 @@ textarea {
   /* 
   sets the color of most forms
   */
-  border-top-color: #F7EEDE;
-  border-color: #F7EEDE;
-  background-color: #F7EEDE;
+  border-top-color: #fff9f0;
+  border-color: #fff9f0;
+  background-color: #fff9f0;
   border-radius: 5px;
 }
 
 p input, input[type=checkbox] {
-  border-top-color: #F7EEDE;
-  border-color: #F7EEDE;
-  background-color: #F7EEDE;
+  border-top-color: #fff9f0;
+  border-color: #fff9f0;
+  background-color: #fff9f0;
 }
 
 .filters [type=radio] + .indicator:before,
@@ -1384,7 +1384,7 @@ p input, input[type=checkbox] {
   /* 
   filter related checkboxes and radio
   */
-  background-color: #F7EEDE;
+  background-color: #fff9f0;
 }
 
 .filters .exclude [type=checkbox]:checked + .indicator:before {
@@ -1398,7 +1398,7 @@ p input, input[type=checkbox] {
   /*
   Sets the background color in the filters on mobile
   */
-  background-color: #F4E8D3 !important;
+  background-color: #e9dac1 !important;
 }
 
 .announcement input[type=submit],
@@ -1414,7 +1414,7 @@ p input, input[type=checkbox] {
   /*
   This sets a shadow in the comment reply form that is floaty in some pages
   */
-  box-shadow: 0 0 3px #F7EEDE;
+  box-shadow: 0 0 3px #fff9f0;
 }
 
 .filters .expander,
@@ -1422,7 +1422,7 @@ p input, input[type=checkbox] {
   /*
   these are the buttons to open the filters
   */
-  border: 2px solid #928b70;
+  border: 2px solid #9e775b;
   border-radius: 5px;
   margin-top: 10px;
 }
@@ -1499,7 +1499,7 @@ textarea, p input, input[type=checkbox], .announcement input[type=submit],
   This is the main text color for all the body of text
   Use a hex color picker to change this!
   */
-  color: #5C6D74;
+  color: #5b4636;
 }
 
 body,
@@ -1515,8 +1515,8 @@ body,
   This sets the main background color
   Use a hex color picker to change this!
   */
-  background-color: #FBF6E5;
-  background: #FBF6E5;
+  background-color: #F4ECD8;
+  background: #F4ECD8;
 }
 
 .actions a,
@@ -1551,8 +1551,8 @@ tr:hover,
   This sets the secondary background color
   Use a hex color picker to change this!
   */
-  background-color: #F4E8D3;
-  background: #F4E8D3;
+  background-color: #e9dac1;
+  background: #e9dac1;
 }
 
 a,
@@ -1583,7 +1583,7 @@ li::marker,
   is colored differently from the body of text
   Use a hex color picker to change this!
   */
-  color: #928b70;
+  color: #9e775b;
 }
 
 #footer,
@@ -1620,11 +1620,11 @@ li.selected, .filters [type=radio]:checked + .indicator:before,
   like buttons, footer and stuff like that.
   Use a hex color picker to change this!
   */
-  background-color: #928b70;
+  background-color: #9e775b;
 }
 
 #header .primary {
-  background: #928b70;
+  background: #9e775b;
 }
 
 #footer,
@@ -1664,14 +1664,14 @@ li.selected, li.dropdown, .notice a,
   be read on the accent color background
   Use a hex color picker to change this!
   */
-  color: #FBF6E5;
+  color: #F4ECD8;
 }
 
 ::-moz-selection,
 ::selection,
 ::-webkit-selection {
-  background-color: #928b70;
-  color: #FBF6E5;
+  background-color: #9e775b;
+  color: #F4ECD8;
 }
 
 .notice,
@@ -1768,10 +1768,10 @@ span.requested,
 
 .thread .even {
   /*comments alternate*/
-  background-color: #F7EEDE;
+  background-color: #fff9f0;
 }
 
 #footer .heading, #footer a, #footer {
   /*changes the color of the footer text. Necessary for squidgeworld*/
-  color: #FBF6E5;
+  color: #F4ECD8;
 }
