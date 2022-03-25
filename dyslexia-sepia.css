@@ -1771,6 +1771,11 @@ span.requested,
   background-color: #fff9f0;
 }
 
+#outer .pagination .current {
+  color: #9e775b;
+  background: #efe3cd;
+}
+
 #footer .heading, #footer a, #footer {
   /*changes the color of the footer text. Necessary for squidgeworld*/
   color: #F4ECD8;

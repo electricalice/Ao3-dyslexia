@@ -1812,6 +1812,11 @@ ul.notes,
   background-color: #43566b;
 }
 
+#outer .pagination .current {
+  color: #3aacff;
+  background: #263343;
+}
+
 #footer .heading, #footer a, #footer {
   /*changes the color of the footer text. Necessary for squidgeworld*/
   color: #1c232d;
