@@ -1200,6 +1200,10 @@ h5.fandoms.heading {
   Filters!
 ============
 */
+.filters fieldset {
+  padding: 0px;
+}
+
 .filters .expander,
 .filters .expanded .expander {
   /* 
@@ -1356,6 +1360,14 @@ input[type=checkbox]:hover,
 .filters .exclude [type=checkbox]:hover + .indicator:before {
   background-color: #3e8ac4;
   border: none;
+}
+
+.filters dt {
+  min-width: auto;
+}
+
+.filters {
+  font-size: 90%;
 }
 
 form.search input[type=text],
